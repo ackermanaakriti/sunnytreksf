@@ -14,4 +14,96 @@
            height: 99%;
            background-color: rgba(54, 54, 54, 0.219);
     }
+   
+}
+.heropage--content
+{
+    position: absolute;
+    top:40%;
+ max-width: 100%;
+    text-align: center;
+   
+  
+  
+    h1 
+    {
+        font-size: var(--section--header);
+        font-family: var(--font-family-libre);
+        color:white;
+        font-weight: 700 !important;
+        margin:5px;
+        span 
+        {
+            color: #46ADD6;
+        }
+        
+    }
+    p 
+    {
+        font-family: var( --font-family-pop);
+        font-size: var( --sub-font-size);
+        color:white;
+        margin:20px 10px;
+        padding:0px 90px;
+    }
+}
+
+
+@media(max-width:1920px)
+{
+    .heropage--content 
+    {
+      max-width: 1200px;
+      
+    }
+}
+@media(max-width:940px)
+{
+  .heropage--content
+  {
+    h1 
+    {
+        font-size: 55px;
+    }
+    p 
+    {
+        font-size: 20px;
+    }
+  }
+}
+@media(max-width:776px)
+{
+    .heropage--content{
+        h1 
+        {
+            font-size: 50px;
+        }
+        p 
+        {
+            font-size: 18px;
+        }
+    }
+}
+@media(max-width:657px)
+{
+    .heropage--content{
+        h1 
+        {
+            font-size: 40px;
+        }
+        p {
+            font-size: 16px;
+            padding:0px 30px;
+        }
+    }
+}
+@media(max-width:492px)
+{
+    .heropage--content{
+        top:30%;
+        p 
+        {
+            padding: 0px 20px;
+        }
+    }
 }

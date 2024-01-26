@@ -15,8 +15,8 @@ const Navbar = () => {
    <div className='navbar--wrapper'>
     <Container>
             <Grid container>
-                <Grid lg={1} xs={1}></Grid>
-                <Grid lg={9} xs={9}>
+                <Grid lg={1} ></Grid>
+                <Grid lg={9} md={9  } xs={12}>
                     <div className='navlinks--wrapper'>
                     <ul>
                         {navlinks.map((item)=>
@@ -30,7 +30,7 @@ const Navbar = () => {
                 </Grid>
                 
                
-                <Grid lg={2} xs={2}>
+                <Grid lg={2} md={2} >
                     <div className='navbar--button'>
                     <button>Customize Tour</button>
                     </div>

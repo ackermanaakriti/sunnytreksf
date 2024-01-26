@@ -1,0 +1,32 @@
+
+
+.tdcard--container {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 0;
+      position: relative;
+      border-radius: 10px;
+    }
+    .tdcard--content {
+      height: 100%;
+      position: absolute;
+      z-index: 3;
+      bottom:10px;
+      top:60%;
+      transform: translateX(50px);
+  
+      p {
+        color: white;
+        font-weight: 600 !important;
+        font-family: var(--font-family-pop);
+        letter-spacing: 1px;
+        font-size: 22px ;
+      }
+    }
+  }
