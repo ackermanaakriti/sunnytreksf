@@ -30,3 +30,89 @@
       }
     }
   }
+  .ccc
+  {
+    
+    position: relative;
+    flex: 0 0 33.33%;
+  }
+  .majestipeakscard--container
+  {
+    width: 100%;
+    position: relative;
+    img 
+    {
+      height: 700px;
+      width: 100%;
+      position: relative;
+    }
+    .majesticpeak--overlay
+    {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(54, 54, 54, 0.24);
+      top:0;
+
+    }
+  }
+  .titlemajesticpeaks
+  {
+    position: absolute;
+   top:80px;
+    color: white;
+    text-align: center;
+   left:23%;
+   font-size: 40px;
+   font-family: var(--font-family-pop);
+  }
+  .majestic--description
+  {
+    margin:30px 10px;
+    width: 100;
+    color:#797979;
+  }
+  .ourtrendingcard--container {
+    width: calc(33.33% - 50px);
+    border: 1px solid rgb(185, 182, 182);
+    padding: 24px;
+    border-radius: 10px;
+    .ourtrendingcard--img {
+      img {
+        height: 250px;
+        border-radius: 6px;
+        width: 100%;
+      }
+    }
+    .ourtrendingcard--content {
+      width: 100%;
+      text-align: start;
+  
+      h1 {
+        color: #4A4A4A;
+        font-size: 27px;
+        font-family: var(--font-family-pop);
+        font-weight: 800;
+      }
+      p {
+        font-size: 18px;
+        align-items: center;
+        font-family: var(--font-family-pop);
+        color: #4A4A4A;margin-left:10px;
+        margin: 15px 4px;
+        
+      }
+    }
+    .ourtrendingcard--location {
+      display: flex;
+      gap: 0.5em;
+      p {
+        margin: 4px;
+        font-size: 18px;
+        color: gray;
+        font-size: 18px;
+       
+      }
+    }
+        
+  }

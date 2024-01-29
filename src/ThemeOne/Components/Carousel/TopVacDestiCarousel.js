@@ -1,56 +1,76 @@
-import React, { useRef, useState ,useEffect} from 'react';
-import TopVacDestiCard from '../Cards/TopVacDestiCard';
+import React, { useRef, useState,useEffect } from 'react';
+import './Carousel.scss';
+import img from '../../../Images/Rectangle 115.png';
 import { tvdata } from '../../Data/TopVacDestination';
-import img from '../../../Images/Rectangle 115.png'
-import './Carousel.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+const TopVacDestiCarousel = () => {
+  const cardRef = useRef(null);
+  const [cardWidth, setCardWidth] = useState(0);
 
-const TopVacDestiCarousel = ({ items }) => {
-    const cardref = useRef(null)
-    const [Cwidth,setCardWidth]= useState(null)
-    
-
-    useEffect(() => {
-        if (cardref.current) {
-          // Access the offsetWidth property of the element
-          const width = cardref.current.offsetWidth;
-          setCardWidth(width);
-         console.log(width)
-        }
-      }, []);
-      
-
-      
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextItem = () => {
-
-    cardref.scrollLeft= cardref.scrollLeft + Cwidth;
-   
+  const handleResize = () => {
+    if (cardRef.current) {
+      setCardWidth(cardRef.current.firstElementChild.clientWidth);
+    }
   };
 
-  const prevItem = () => {
-    cardref.scrollLeft= cardref.scrollLeft - Cwidth;
+  const scrollLeft = () => {
+    cardRef.current.scrollLeft -= cardWidth;
   };
+
+  const scrollRight = () => {
+    cardRef.current.scrollLeft += cardWidth;
+  };
+
+  
+  useEffect(() => {
+    handleResize(); // Set initial width
+
+    // Event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
-    <>
+    <div >
+     
     
-   
-    
-    <div  className='carousel--card--container'>
-        <div   className='cddd'>
-          <TopVacDestiCard />
-          <TopVacDestiCard/>
-          <TopVacDestiCard/>
-         
-        </div>
-        <button onClick={prevItem}>Next</button>
-    <button onClick={nextItem}>Next</button>
-    </div>
+
+       <div className='carousel--wrappper-tvd'  >
+       <div className='btn--container'>
+      <button className="button-prev" onClick={scrollLeft}>
+      <FontAwesomeIcon style={{color:'#0E6097'}} icon={faArrowLeft} />
+      </button>
+      <button className="button-next" onClick={scrollRight}>
+      <FontAwesomeIcon style={{color:'#0E6097'}} icon={faArrowRight} />
+      </button>
+      </div>
+      <div ref={cardRef} className="carousel--card--container">
+        {tvdata.map((item, index) => (
+            <div  className="tdcard--container" >
+          <div key={index} className="tdcard--item">
+            <img src={img} alt={`card-img-${index}`} />
+            <div className="tdcard--content">
+              <p>{item.placename}</p>
+            </div>
+          </div>
+          </div>
       
-   
-    </>
+        ))}
+        </div>
+          
+          </div>
+       
+      
+
+     
+    </div>
   );
 };
 

@@ -9,18 +9,18 @@ export const tvdata=[
         placename:'Sarangkot ,Nepal'
        },
        {
-        placename:'Sarangkot ,Nepal'
+        placename:'chitawan ,Nepal'
        },
        {
-        placename:'Sarangkot ,Nepal'
-       },
-
-       {
-        placename:'Sarangkot ,Nepal'
+        placename:'Dolpa ,Nepal'
        },
 
        {
-        placename:'Sarangkot ,Nepal'
+        placename:'humla ,Nepal'
+       },
+
+       {
+        placename:'Dharan ,Nepal'
        }
 
 

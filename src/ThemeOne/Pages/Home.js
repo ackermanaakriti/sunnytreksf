@@ -3,6 +3,9 @@ import Heropagesection from '../Components/Sections/Heropagesection'
 import Navbar from '../Components/Navbar/Navbar'
 import LayOutone from '../LayOutone'
 import TopVacDestination from '../Components/Sections/TopVacDestination'
+import ExploreActivities from '../Components/Sections/ExploreActivities'
+import MajesticPeaks from '../Components/Sections/MajesticPeaks'
+import OurTrendingpack from '../Components/Sections/OurTrendingpack'
 
 const Home = () => {
   return (
@@ -12,6 +15,9 @@ const Home = () => {
      
       <Heropagesection/>
       <TopVacDestination/>
+      <ExploreActivities/>
+      <MajesticPeaks/>
+      <OurTrendingpack/>
       </LayOutone>
         
        
