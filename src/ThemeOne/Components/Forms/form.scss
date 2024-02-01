@@ -1,0 +1,56 @@
+.contactusform--container
+{
+    padding:30px 30px 10px 30px;
+    .contactusform--header
+    {
+        background-color: var(--primary-color);
+        padding:3px ;
+        color:white;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        p 
+        {
+            margin:4px;
+            font-family: var(--font-family-pop);
+            font-family: 700 !important;
+            text-align: center;
+
+
+
+        }
+    }
+    form 
+    {
+        display: flex;
+        flex-direction: column;
+        input 
+        {
+            padding:8px 15px;
+            font-family: var(--font-family-pop);
+            margin:8px 0px;
+            border:1px solid rgb(158, 157, 157);
+            color: #797979;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+            
+
+        }
+        textarea
+        {
+            padding:8px 15px;
+
+            font-family: var(--font-family-pop);
+            margin:8px 0px;
+            border:1px solid rgb(154, 153, 153);
+            color: #797979;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+
+
+        }
+    }
+}

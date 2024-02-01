@@ -1,0 +1,120 @@
+.pages--wrapper
+{
+  background-image: url('../../Images//Destination.png');
+  position: relative;
+  height: 80vh;
+  position: center;
+  background-repeat: no-repeat;
+}
+.pages--header
+{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    h1 
+    {
+        color:white;
+        font-size: 70px;
+        font-family: var(--font-family-libre);
+        line-height: 88px;
+    }
+}
+.checkbox--content--container
+{
+    display: flex;
+    gap:90px;
+}
+.singlepage--content--wrapper
+{
+    display: flex;
+    gap:80px;
+}
+.singlepage-acitivities
+{
+    padding-top:20px;
+    margin:115px 0px;    
+   
+   
+
+
+    h1 
+    {
+        text-align: center;
+    }
+    .signlepage-acitvities--cards
+    {
+        margin-top: 50px;
+    }
+    .signlepage-otherdestinaitons--cards
+    {
+        margin-top: 50px;
+    }
+}
+.ccc
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.activites--wrapper
+{
+    padding-top: 50px;
+}
+.form--container
+{
+    padding:0px 40px;
+ 
+}
+.form--containerr
+{
+    background-color: var( --primary-color);
+    padding:20px 40px;
+    border-radius: 8px;
+    p 
+    {
+        font-size: 22px;
+        color:white;
+        font-weight: 600;
+        margin:10px 0px;
+    }
+    li 
+        {
+
+            list-style: none;
+           font-size: 16px;
+           padding:8px 0px;
+           text-transform: capitalize;
+           font-family: var(--font-family-pop);
+           font-weight: 500;
+           color:white;
+        }
+    
+}
+.form--content
+{
+    border:2px dashed gray;
+    text-align: center;
+    margin: 0px 30px ;
+    padding:5px;
+    
+    h4 
+    {
+         font-family: var(--font-family-pop);
+         font-size: 22px;
+         margin:5px;
+         color:#292929;
+
+    }
+    p 
+    {
+        margin:5px;
+        color:#4A4A4A;
+        font-size: 14px;
+        padding:5px 30px;
+    }
+}
+.mapcontact
+{
+    width: 100%;
+    padding-top: 20px;
+}

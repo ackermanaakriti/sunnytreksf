@@ -1,0 +1,27 @@
+.pagination--container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.buttons--container
+{
+  display: flex; 
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  
+  button 
+  {
+    padding: 5px 8px;
+    background-color: transparent;
+  }
+  p 
+  {
+    margin: 4px;
+    border: 1px solid rgba(101, 100, 100, 0.523);
+    padding: 3px 8px;
+    color:gray;
+}
+
+  }

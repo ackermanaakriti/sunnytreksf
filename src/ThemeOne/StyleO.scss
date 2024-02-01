@@ -9,3 +9,9 @@
   --font-family-libre:"Libre Caslon Text", serif;
   --white-color:#fff;
 }
+body{
+  font-family: var(--font-family-pop);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-family-libre);
+}

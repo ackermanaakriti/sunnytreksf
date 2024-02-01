@@ -1,0 +1,60 @@
+.region--container
+{ border:1px solid gray;
+  width: 100%;
+  padding:20px;   
+ 
+    form 
+    {
+        display: flex;
+        flex-direction: column;
+        div 
+        {
+            padding:5px 0px;
+            label 
+            {
+              color:#4A4A4A;
+              font-size: 18px;
+            }
+            input 
+            {
+                
+                font-size: 30px;
+                transform: scale(1.5);
+                margin-right:12px;
+            }
+
+        } 
+     
+    }
+}
+.checkbox--header
+{
+    border:1px solid gray;
+    width: 100%;
+    padding:0px  20px 0px 20px;
+    h2 
+    {
+        padding: 5px 20px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      color:var(--primary-color);
+      font-size: 20px;
+      font-family: var(--font-family-libre);
+      margin:4px;
+     
+    }
+}
+.checkbox--container
+{
+     width: 250px;
+}
+.activities--container
+{
+   border-top: none;
+    border-left:1px solid gray;
+    border-right:1px solid gray;
+
+    border-bottom:1px solid gray;
+
+}

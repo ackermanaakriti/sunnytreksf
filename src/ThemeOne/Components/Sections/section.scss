@@ -3,6 +3,7 @@
   background-image: url("../../../Images/homeimg.png");
   height: 100vh;
   background-repeat: no-repeat;
+  position: relative;
 
   .heropage--overlay {
     position: absolute;
@@ -11,8 +12,10 @@
     width: 100%;
     height: 99%;
     background-color: rgba(54, 54, 54, 0.219);
+
   }
 }
+
 .heropage--content {
   position: absolute;
   top: 40%;
@@ -37,6 +40,11 @@
     padding: 0px 90px;
   }
 }
+.heropagesection--wrapper{
+  h1{
+    font-size: var(--main-font-size);
+  }
+}
 .topvacdestination--wrapper {
   padding: 80px 10px;
 }
@@ -48,6 +56,7 @@
   margin: 5px;
   letter-spacing: 1px;
   font-weight: 600 !important;
+  margin-bottom: 60px;
 }
 .exploreacti--container {
   padding-top: 50px;
@@ -100,11 +109,13 @@
 {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap:20px;
     padding-top:40px;
+    justify-content: space-between;
     .divv
     {
-        padding:10px;
+       
+        flex: 0 0 calc(14.2857142857% - 20px);
         p 
         {
             text-align: center;
@@ -213,6 +224,7 @@
     gap: 2em;
   }
 }
+
 @media (max-width: 1920px) {
   .heropage--content {
     max-width: 1200px;

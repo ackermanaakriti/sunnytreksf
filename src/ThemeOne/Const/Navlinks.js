@@ -3,16 +3,19 @@ export const navlinks=[
         name:'Destinations',
           slug: "",
         category: [],
+        path:'/destination'
     },
     {
         name:'Services',
           slug: "",
         category: [],
+        path:'/singleplace'
     },
     {
-        name:'Seasons',
+        name:'Activities',
           slug: "",
         category: [],
+        path:'/activities'
     },
     {
         name:'About Us',
@@ -23,5 +26,6 @@ export const navlinks=[
         name:'Contact Us',
           slug: "",
         category: [],
+        path:'/contactus'
     },
 ]
