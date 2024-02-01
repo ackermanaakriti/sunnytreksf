@@ -1,0 +1,15 @@
+
+@import '../../StyleO.scss';
+.main--btn--wrapper
+{
+    button 
+    {
+        padding:10px 30px;
+        border:none;
+        border-radius: 8px;
+        background-color: var(--primary-color);
+        color:white;
+        font-size: 18px;
+        font-family: var(--font-family-pop);
+    }
+}

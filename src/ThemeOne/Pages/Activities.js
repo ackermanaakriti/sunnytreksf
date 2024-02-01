@@ -9,26 +9,22 @@ import ActivitiesPagination from '../Components/Pagination/Activipagination'
 const Activities = () => {
   return (
    <>
-   <LayOutone>
-    <div className='activites--wrapper'>
-   <div className="pages--wrapper">
-        <Container>
-          <div className="pages--header">
-            <h1>Activities</h1>
-          </div>
-        </Container>
-      </div>
-
-      <Container>
+    <LayOutone>
+  <div className='pages--wrapper'>
+    <Container>
+    <div className='pages--header'>
+        <h1>Activities</h1>
+    </div>
+    </Container>
+  </div>
+  <Container>
   <div className='checkbox--content--container'>
    
     <Checkboxs/>
     <ActivitiesPagination/>
-  
-   
   </div>
   </Container>
-  </div>
+   
    </LayOutone>
   
    </>

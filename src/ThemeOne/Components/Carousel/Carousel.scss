@@ -38,6 +38,31 @@
     cursor: pointer;
   }
 }
+.btn--container--ourteam
+{
+  
+  position: absolute;
+ bottom:5%;
+ 
+ right:0%;
+ padding:20px 0px;
+  .button-next
+  {
+  border-radius: 50%;
+  border:2px solid #0E6097;
+  padding:4px 6px;
+  margin:5px;
+  cursor: pointer;
+  }.button-prev
+  {
+    border-radius: 50%;
+    border:2px solid #0E6097;
+    padding:4px 6px;
+    margin-right:8px;
+    cursor: pointer;
+  }
+
+}
 
 
 .tdcard--container {

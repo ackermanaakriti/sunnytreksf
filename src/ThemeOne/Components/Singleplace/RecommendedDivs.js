@@ -1,13 +1,13 @@
 import React from 'react'
 import './singlepage.scss'
 
-const RecommendedDivs = () => {
+const RecommendedDivs = ({value}) => {
   return (
     <div class="recomPro">
     <div className='titleBox'>
-        Featured Packages
+      {value}
     </div>
-    <ul class="packagesListing">
+    {/* <ul class="packagesListing">
         <li>
             <a href="">
             <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@ Himalayan Heights Expedition
 </svg>
 Jungle Safari Adventure</a>
         </li>
-    </ul>
+    </ul> */}
     </div>
   )
 }

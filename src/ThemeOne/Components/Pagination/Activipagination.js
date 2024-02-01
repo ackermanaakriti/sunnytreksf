@@ -24,7 +24,7 @@ const ActivitiesPagination = () => {
 
   return (
     <>
-      <div className="pagination--container">
+      <div className="acti--pagination--container">
         {currentCards.map((item) => (
           <ActivitiesCard
             key={item.id}

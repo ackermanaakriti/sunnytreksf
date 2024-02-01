@@ -21,6 +21,7 @@ export const navlinks=[
         name:'About Us',
           slug: "",
         category: [],
+        path:'/aboutus'
     },
     {
         name:'Contact Us',

@@ -1,0 +1,54 @@
+
+@import '../../../StyleO.scss';
+.aboutus--b
+{
+    background-color: var(--primary-color);
+}
+.aboutsicons
+{
+    align-items: center;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    p 
+    {
+        color:white;
+        font-size: 18px;
+        font-weight: 700;;
+    }
+}
+.seccnd--div 
+{
+    padding-top:10px;
+}
+.aboutus---img
+{
+ height: 320px;
+ padding:40px;
+ img 
+ {
+    height: 100%;
+ }
+
+}
+.aboutus--content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 40px 10px 0px 10px;
+    p 
+    {
+        margin:0px 3px;
+        font-size: 15px;
+        color:#4A4A4A;
+    }
+    h1 
+    {
+        font-size: 50px;
+        margin:0px 3px 10px 3px;
+        color:var(--primary-color)
+
+    }
+}

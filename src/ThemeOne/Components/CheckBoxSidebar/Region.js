@@ -22,14 +22,14 @@ const Region = () => {
     <>
       <div className="checkbox--container">
 
-        <div className="checkbox--header">       <h2>
+        <div className="checkbox--header">       <p>
           Region{" "}
           <FontAwesomeIcon
             onClick={handleRegion}
-            style={{ fontSize: "16px" }}
+            style={{ fontSize: "13px",color:'#0E6097' }}
             icon={faChevronDown}
           />{" "}
-        </h2></div>
+        </p></div>
 
         {regionvisible && (
           <div className="region--container">
@@ -45,14 +45,14 @@ const Region = () => {
         )}
 
 
-        <div className="checkbox--header">       <h2>
+        <div className="checkbox--header">       <p>
           Activities
           <FontAwesomeIcon
             onClick={handleActivities}
-            style={{ fontSize: "16px" }}
+            style={{ fontSize: "13px",color:'#0E6097' }}
             icon={faChevronDown}
           />{" "}
-        </h2></div>
+        </p></div>
 
         {activitiesvisible && (
           <div className="region--container">
@@ -68,14 +68,14 @@ const Region = () => {
         )}
 
 
-        <div className="checkbox--header">       <h2>
+        <div className="checkbox--header">       <p>
           Budget{" "}
           <FontAwesomeIcon
             onClick={handleBudget}
-            style={{ fontSize: "16px" }}
+            style={{ fontSize: "13px",color:'#0E6097' }}
             icon={faChevronDown}
           />{" "}
-        </h2></div>
+        </p></div>
 
         {bugetvisible && (
           <div className="region--container">
