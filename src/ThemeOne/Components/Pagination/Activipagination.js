@@ -24,6 +24,9 @@ const ActivitiesPagination = () => {
 
   return (
     <>
+    <div className="activites-flex">
+
+   
       <div className="acti--pagination--container">
         {currentCards.map((item) => (
           <ActivitiesCard
@@ -49,6 +52,7 @@ const ActivitiesPagination = () => {
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
+      </div>
       </div>
       </div>
       

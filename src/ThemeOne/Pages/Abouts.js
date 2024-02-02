@@ -9,7 +9,7 @@ const Abouts = () => {
    <>
    <LayOutone>
    <div className='pages--wrapper'>
-    <Container>
+    <Container maxWidth='xl'>
     <div className='pages--header'>
         <h1>About Us</h1>
     </div>

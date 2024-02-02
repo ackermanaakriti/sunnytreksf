@@ -1,6 +1,7 @@
 import React from 'react'
 import img from '../../../Images/pokhara.png'
 import './Cards.scss'
+import MainButton from '../Buttons/MainButton'
 
 const DestinationCard = ({props}) => {
   return (
@@ -13,7 +14,11 @@ const DestinationCard = ({props}) => {
      <div className='sticker'>Trending</div>
      <div className='destinationcard--content'>
         <h1>Mountain Base Camp</h1>
+        <div className='destinationcard--subcontent'>
         <p>(1 review)</p>
+        <MainButton value='View Details'/>
+        </div>
+      
      </div>
     </div>
     </div>

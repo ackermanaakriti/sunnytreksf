@@ -17,13 +17,13 @@ const SinglePlace = () => {
           </div>
         </Container>
       </div>
-      <Container>
+      <Container maxWidth='xl'>
         <div className="singlepage--content--wrapper">
           <Inquiry />
           <Detail />
         </div>
       </Container>
-      <Container>
+      <Container maxWidth='xl'>
         <div className="singlepage-acitivities">
           <h1 className="section--header">Activities in Pokhara</h1>
           <div className="signlepage-acitvities--cards">
@@ -37,13 +37,13 @@ const SinglePlace = () => {
           </div>
         </div>
       </Container>
-      <Container>
+      <Container maxWidth='xl'>
         <div className="singlepage-otherdestination">
             <Container>
           <h1 className="section--header">Other Destination May You Like</h1>
           <div className="signlepage-otherdestinaitons--cards">
            
-              <div className="ccc">
+              <div className="ddd">
                 {singlepageactivities.map((item) => (
                 <DestinationCard/>
                 ))}

@@ -14,12 +14,12 @@ const Navbar = () => {
    <div className='navbar--main--wrapper'>
    <Topbar/>
    <div className='navbar--wrapper'>
-    <Container>
+    <Container maxWidth='xl'>
             <Grid container>
-                <Grid lg={1} >
+                <Grid lg={2} >
                     <Link to='/'>Logo</Link>
                 </Grid>
-                <Grid lg={9} md={9  } xs={12}>
+                <Grid lg={8} md={9  } xs={12}>
                     <div className='navlinks--wrapper'>
                     <ul>
                         {navlinks.map((item)=>

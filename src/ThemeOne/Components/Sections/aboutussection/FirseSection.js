@@ -10,7 +10,7 @@ const FirseSection = () => {
     <>
     
      <div className='aboutus--b'>
-        <Container>
+        <Container maxWidth='xl'>
             <Grid container>
                 <Grid xs={2}>
                     <div className='aboutsicons'>
@@ -41,7 +41,7 @@ const FirseSection = () => {
      </Container>
     </div>
     <div className='seccnd--div '>
-        <Container>
+        <Container  maxWidth='xl'>
           <Grid container>
             <Grid xs={5}>
                 <div className='aboutus---img'>

@@ -52,6 +52,7 @@ const Bookingform = () => {
                 {" "}
                 <label>Date of Travel</label>
                 <input
+                className="date-input"
                   type="date"
                   placeholder=""
                   name="dateoftravel"
@@ -65,7 +66,7 @@ const Bookingform = () => {
             </div>
 
             <div className="secnd-div">
-                
+
             </div>
           </form>
         </Container>

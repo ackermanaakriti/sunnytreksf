@@ -22,39 +22,48 @@
         }
     }
     form 
-    {
+     {
         display: flex;
         flex-direction: column;
+        row-gap: 15px;
+        margin-top:10px;
         input 
         {
-            padding:8px 15px;
-            font-family: var(--font-family-pop);
-            margin:8px 0px;
-            border:1px solid rgb(158, 157, 157);
-            color: #535353;
-            border-radius: 6px;
-            outline: none;
-            font-size: 16px;
-            font-weight: 500;
-            
-
+          padding:12px 0px 12px 12px;
+          border-radius: 8px;
+          border: 1px solid #4A4A4A;
+          font-family: var(--font-family-pop);
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 500;
+          position: relative;
+          width: 100%;
+      }
+      .input--wrapper--inquiry
+      {
+        position: relative;
+      }
+      span 
+      {
+        position: absolute;
+        top:10px;
+        right: 20px;
+        
+      }
+      textarea 
+      {
+       
+        padding:12px 0px 12px 12px;
+          border-radius: 8px;
+          border: 1px solid #4A4A4A;
+          font-family: var(--font-family-pop);
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 500;
+          
+          width: 100%;
+      }
         }
-        textarea
-        {
-            padding:8px 15px;
-
-            font-family: var(--font-family-pop);
-            margin:8px 0px 13px  0px;
-            border:1px solid rgb(154, 153, 153);
-            color: #797979;
-            border-radius: 6px;
-            outline: none;
-            font-size: 16px;
-            font-weight: 500;
-
-
-        }
-    }
 }
 .bookingform--container
 {
@@ -77,6 +86,10 @@
         {
             padding:8px 100px;
             font-family: var(--font-family-pop);
+        }
+        .date-input
+        {
+            appearance: none;
         }
     }
 }

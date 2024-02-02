@@ -11,13 +11,13 @@ const Activities = () => {
    <>
     <LayOutone>
   <div className='pages--wrapper'>
-    <Container>
+    <Container maxWidth='xl'>
     <div className='pages--header'>
         <h1>Activities</h1>
     </div>
     </Container>
   </div>
-  <Container>
+  <Container maxWidth='xl'>
   <div className='checkbox--content--container'>
    
     <Checkboxs/>

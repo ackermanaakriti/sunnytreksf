@@ -22,10 +22,10 @@ const Topbar = () => {
         
            
           <div className="topbar--container">
-            <Container >
+            <Container maxWidth='xl' >
           
             <Grid container>
-                <Grid lg={4}  md={5} sm={6} >
+                <Grid lg={3}  md={5} sm={6} >
                     <div className="topbar--contact--wrapper">
                     <div className="topbar--contact">
                       <span>
@@ -42,7 +42,7 @@ const Topbar = () => {
                     </div>
                    
                 </Grid>
-                <Grid lg={5} sm={1} md={4} xs={0}></Grid>
+                <Grid lg={6} sm={1} md={4} xs={0}></Grid>
                 <Grid lg={3} md={3} sm={5} >
                     <div className="sm--icons">
                       <span>  <FontAwesomeIcon style={{fontSize:'22px',color:'white'}} icon={faFacebookF} /></span>

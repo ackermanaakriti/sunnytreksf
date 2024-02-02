@@ -23,6 +23,7 @@ const CardTable = () => {
 
   return (
     <>
+    <div className="singepage--cards">
       <div className="pagination--container">
         {currentCards.map((item) => (
           <DestinationCard
@@ -48,6 +49,7 @@ const CardTable = () => {
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
+      </div>
       </div>
       </div>
       

@@ -20,15 +20,11 @@
         line-height: 88px;
     }
 }
-.checkbox--content--container
-{
-    display: flex;
-    gap:70px;
-}
+
 .singlepage--content--wrapper
 {
     display: flex;
-    gap:80px;
+    gap:50px;
 }
 .singlepage-acitivities
 {
@@ -55,7 +51,15 @@
 {
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap:25px;
+}
+.ddd 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+  row-gap: 38px;
+
 }
 .activites--wrapper
 {
@@ -82,7 +86,7 @@
         {
 
             list-style: none;
-           font-size: 16px;
+           font-size: 18px;
            padding:8px 0px;
            text-transform: capitalize;
            font-family: var(--font-family-pop);
@@ -131,4 +135,7 @@
 .checkbox--content--container
 {
     padding-top: 50px;
+    display: flex;
+    column-gap: 70px;
+
 }

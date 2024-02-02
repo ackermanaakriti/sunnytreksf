@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Container } from '@mui/material';
+import './Carousel.scss'
 
 
 const OurteamCarousel = () => {
@@ -40,7 +41,7 @@ const OurteamCarousel = () => {
   
   return (
   <>
-  <Container>
+  <Container  maxWidth='xl'>
   <div className='ourteamcarousel--container'>
   <div className='btn--container--ourteam'>
       <button className="button-prev" onClick={scrollLeft}>
@@ -51,7 +52,7 @@ const OurteamCarousel = () => {
       </button>
       </div>
    
-      <div ref={cardRef} className="carousel--card--container">
+      <div ref={cardRef} className= "ourteam-carousel--card--container">
         {ourteam.map((item, index) => (
          <div className='ourteamcard'>
          <img src={img}/>

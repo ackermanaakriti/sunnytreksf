@@ -15,7 +15,7 @@ const ContactUs = () => {
    <LayOutone>
    <div className='contactus--container'>
    <div className='pages--wrapper'>
-    <Container>
+    <Container maxWidth='xl'>
     <div className='pages--header'>
         <h1>Contact Us</h1>
     </div>
@@ -24,7 +24,7 @@ const ContactUs = () => {
   </div>
 
   <div className='contactus--content'>
-    <Container>
+    <Container  maxWidth='xl'>
     <Grid container >
         <Grid xs={6}>
             <div className='form--container'>

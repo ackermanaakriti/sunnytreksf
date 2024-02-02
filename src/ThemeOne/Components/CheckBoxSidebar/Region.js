@@ -9,6 +9,9 @@ const Region = () => {
   const [regionvisible, setregionVisible] = useState(false);
   const [activitiesvisible, setacitivitesvisible] = useState(false);
   const [bugetvisible, setbudgetvisible] = useState(false);
+  
+
+ 
   const handleRegion = () => {
     setregionVisible(!regionvisible);
   };
@@ -24,11 +27,14 @@ const Region = () => {
 
         <div className="checkbox--header">       <p>
           Region{" "}
+          <span>
           <FontAwesomeIcon
             onClick={handleRegion}
             style={{ fontSize: "13px",color:'#0E6097' }}
             icon={faChevronDown}
-          />{" "}
+          />
+          </span>
+        
         </p></div>
 
         {regionvisible && (

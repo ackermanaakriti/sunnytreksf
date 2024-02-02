@@ -99,6 +99,45 @@
       }
     }
   }
+  .ourteam-carousel--card--container
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    img 
+    {
+      height: 110px;
+      border:2px solid var(--primary-color);
+      border-radius: 50%;
+      display: flex;
+      margin: auto;
+    }
+  }
+  .ourteam--content
+  {
+    text-align: center;
+    .nameee
+    {
+      font-size: 22px;
+      font-weight: 600;
+      font-family: var( --font-family-inter);
+      margin:0px;
+      padding-top: 15px;
+      color:var(--black-color)
+
+    }
+    .work
+    {
+      font-weight: 600;
+      font-family: var( --font-family-inter);
+      margin:0px;
+      padding-top: 8px;
+      color:var(--sub--header);
+      font-size: 22px;
+
+    }
+  }
 
 
   

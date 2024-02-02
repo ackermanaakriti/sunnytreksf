@@ -1,7 +1,13 @@
+
+@import '../../StyleO.scss';
 .region--container
-{ border:1px solid gray;
+{
+    border-top:none;
+    border-bottom:none;
+    border-right:1px solid #DADADA   ;
+    border-left:1px  solid #DADADA ;
   width: 100%;
-  padding:20px;   
+  padding: 0px 20px 20px 20px;   
  
     form 
     {
@@ -9,17 +15,18 @@
         flex-direction: column;
         div 
         {
-            padding:5px 0px;
+          
             label 
             {
-              color:#4A4A4A;
-              font-size: 15px;
+              color:var(--black-color);
+              font-size: 18px;
+              line-height: 23px;
               text-transform: capitalize;
             }
             input 
             {
                 
-                font-size: 30px;
+                font-size: 18px;
                 transform: scale(1.5);
                 margin-right:12px;
             }
@@ -30,33 +37,47 @@
 }
 .checkbox--header
 {
-    border:1px solid gray;
+    border:1px solid #DADADA;
     width: 100%;
     padding:0px  20px 0px 20px;
     p
     {
-        padding: 5px 20px;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-  color:#505050;
-      font-size: 16px;
-      font-family: var(--font-family-libre);
-      margin:4px;
-      font-weight: 600;
+        line-height: 26px;
+        padding: 14px 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+       color:var( --black-color);
+        font-size: 22px;
+        font-family: var(--font-family-inter);
+        margin: 0px;
+        font-weight: 700 !important;
+        
      
     }
+    span:active 
+    {
+        transform: rotate(180deg);
+    }
+    
 }
 .checkbox--container
 {
-     width: 225px;
+  
+     flex: 0 0 20%;
+     form 
+     {
+        div 
+        {
+            padding-top:20px;
+        }
+     }
 }
 .activities--container
 {
-   border-top: none;
-    border-left:1px solid gray;
-    border-right:1px solid gray;
-
-    border-bottom:1px solid gray;
+    border-top:none;
+    border-bottom:none;
+    border-right:1px solid #DADADA   ;
+    border-left:1px  solid #DADADA ;
 
 }
