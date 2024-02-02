@@ -2,7 +2,6 @@ import React from 'react'
 import LayOutone from '../LayOutone'
 import { Container } from '@mui/material'
 import Bookingform from '../Components/Forms/Bookingform'
-
 const Book = () => {
   return (
     <LayOutone>
