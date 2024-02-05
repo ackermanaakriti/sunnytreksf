@@ -3,6 +3,7 @@ import LayOutone from '../LayOutone'
 import { Container, Grid } from '@mui/material'
 import FirseSection from '../Components/Sections/aboutussection/FirseSection'
 import OurteamCarousel from '../Components/Carousel/OurteamCarousel'
+import './Pages.scss'
 
 const Abouts = () => {
   return (
@@ -17,7 +18,12 @@ const Abouts = () => {
    
   </div>
   <FirseSection/>
+  <h1 className='section--header'> Our Team</h1>
   <OurteamCarousel/>
+  <div className='ourdiares--section'>
+  <h1 className='section--header'> Travel Diaries</h1>
+ </div>
+
    </LayOutone>
    </>
   )

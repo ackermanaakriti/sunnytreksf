@@ -6,6 +6,7 @@ import Detail from "../Components/Singleplace/Detail";
 import ActivitiesCard from "../Components/Cards/ActivitiesCard";
 import { singlepageactivities } from "../Context/SinglepageData";
 import DestinationCard from "../Components/Cards/DestinationCard";
+import SinglePlaceReview from "../Components/Singleplace/SinglePlaceReview";
 
 const SinglePlace = () => {
   return (
@@ -23,36 +24,9 @@ const SinglePlace = () => {
           <Detail />
         </div>
       </Container>
-      <Container maxWidth='xl'>
-        <div className="singlepage-acitivities">
-          <h1 className="section--header">Activities in Pokhara</h1>
-          <div className="signlepage-acitvities--cards">
-            <Container>
-              <div className="ccc">
-                {singlepageactivities.map((item) => (
-                  <ActivitiesCard />
-                ))}
-              </div>
-            </Container>
-          </div>
-        </div>
-      </Container>
-      <Container maxWidth='xl'>
-        <div className="singlepage-otherdestination">
-            <Container>
-          <h1 className="section--header">Other Destination May You Like</h1>
-          <div className="signlepage-otherdestinaitons--cards">
-           
-              <div className="ddd">
-                {singlepageactivities.map((item) => (
-                <DestinationCard/>
-                ))}
-              </div>
-            
-          </div>
-          </Container>
-        </div>
-      </Container>
+    
+    
+   
     </LayOutone>
   );
 };

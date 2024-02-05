@@ -68,24 +68,36 @@
 .bookingform--container
 {
     background-color:#E8EBED ;
+    padding: 50px 0px;
     form 
     {
+        outline: none;
         label
         {
             display: block;
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 18px;
+            font-weight: 600 !important;
+            line-height: 28px;
             font-family: var(--font-family-pop);
+            margin-bottom: 8px;
         }
         input 
         {
-            padding:8px 100px;
+            padding:3px 350px 3px 20px;
             font-family: var(--font-family-pop);
+            font-size: 16px;
+            line-height: 27px;
+            font-size: 400 !important;
+            border:1px solid var(--black-color);
         }
         select 
         {
-            padding:8px 100px;
+            padding:3px 380px 3px 20px;
             font-family: var(--font-family-pop);
+            font-size: 16px;
+            line-height: 27px;
+            font-size: 400 !important; 
+            border:1px solid var(--black-color);
         }
         .date-input
         {
@@ -93,8 +105,50 @@
         }
     }
 }
-.f-div
+.f-div 
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.secnd-div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    .second-div-input
+    {
+        padding:3px 153px 3px 20px;
+    }
+}
+.thirddiv
+{
+    margin-top: 40px;
+    label
+    {
+        display: block;
+        font-size: 18px;
+        font-weight: 600 !important;
+        line-height: 28px;
+        font-family: var(--font-family-pop);
+        margin-bottom: 8px;
+    }
+    textarea
+    {
+        font-family: var(--font-family-pop);
+        width: 98%;
+        padding:10px 0px 3px 20px;
+        border:1px solid var(--black-color);
+    }
+}
+.fourth-div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.fifth-div
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
 }

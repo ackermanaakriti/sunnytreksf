@@ -1,5 +1,21 @@
 
 @import '../../StyleO.scss';
+.ratinggg--container
+{
+    border-top:1px solid #DADADA;
+    border-bottom:1px solid #DADADA;
+    border-right:1px solid #DADADA   ;
+    border-left:1px  solid #DADADA ;
+    
+    
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+}
+.rating--container
+{
+    margin-top: 20px;
+    border-radius: 15px;
+}
 .region--container
 {
     border-top:none;
@@ -80,4 +96,9 @@
     border-right:1px solid #DADADA   ;
     border-left:1px  solid #DADADA ;
 
+}
+.rating--icon--container
+{
+    text-align: center;
+    padding:30px 30px 10px 10px;
 }

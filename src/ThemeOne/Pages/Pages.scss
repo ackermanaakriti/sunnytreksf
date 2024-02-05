@@ -25,11 +25,12 @@
 {
     display: flex;
     gap:50px;
+    margin-top: 50px;
 }
 .singlepage-acitivities
 {
     padding-top:20px;
-    margin:115px 0px;    
+    margin:50px 0px;    
    
    
 
@@ -138,4 +139,34 @@
     display: flex;
     column-gap: 70px;
 
+}
+.ourdiares--section
+{
+    padding-top:55px;
+}
+.ourservices--card--wrapper
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    padding-top: 50px;
+}
+.ourservices--content--wrapper
+{
+    padding-top: 50px;
+    .ourservices--description
+    {
+        p 
+        {
+            margin:3px;
+            color:#797979;
+            font-size: 20px;
+             font-family: var(--font-family-pop);
+             padding:10px 300px;
+             font: 600;
+             line-height: 28px;
+             text-align: center;
+        }
+    }
 }

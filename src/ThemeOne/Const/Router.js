@@ -7,6 +7,8 @@ import Activities from '../Pages/Activities'
 import ContactUs from '../Pages/ContactUs'
 import Book from '../Pages/Book'
 import Abouts from '../Pages/Abouts'
+import Packages from '../Pages/Packages'
+import Services from '../Pages/Services'
 
 const Routers = () => {
   return (
@@ -20,6 +22,9 @@ const Routers = () => {
         <Route path='/contactus' element={<ContactUs/>}/>
         <Route path='/book' element={<Book/>}/>
         <Route path='/aboutus' element={<Abouts/>}/>
+        <Route path='/packages' element={<Packages/>}/>
+        <Route path='/services' element={<Services/>}/>
+
 
 
 

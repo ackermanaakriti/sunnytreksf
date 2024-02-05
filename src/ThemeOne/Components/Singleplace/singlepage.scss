@@ -8,7 +8,7 @@
     }
 
     flex:0 0  23%;
-    margin-top: 40px;
+  margin:3px;
      form 
      {
         display: flex;
@@ -82,8 +82,16 @@
         font-size: 30px;
         font-family: var( --font-family-libre);
         font-weight: 700;
-        margin: 40px 0px 10px 0px;
+      margin-top:40px;
+      margin-bottom: 5px;
+      &:nth-child(1)
+      {
+        margin-top:0px;
+      }
+
     }
+    
+
     p 
     {
         margin:5px 0px;
@@ -93,7 +101,12 @@
         font-weight: 600 !important;
         line-height: normal;
        
+       
     }
+}
+.singleplacereview--container
+{
+  padding-top:60px;
 }
 .featuredDes--container{
   width: 100%;

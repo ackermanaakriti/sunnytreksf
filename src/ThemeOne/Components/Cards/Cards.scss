@@ -116,6 +116,106 @@
     }
         
   }
+  .userreviewcard--container
+  {
+    display: flex;
+    gap:26px;
+   justify-content: center;
+    .userreview--content
+    {
+     h1
+     
+     {
+      font-size: 33px;
+      font-family: var(--font-family-pop);
+      color:var(--sub--header);
+      margin:3px 0px;
+      font-weight: 800 !important;
+     }
+     h4 
+     {
+      font-size: 18px;
+      font-family: var(--font-family-pop);
+      margin:3px 0px;
+      color:#797979;
+     }
+     p 
+     {
+      color:var( --black-color);
+      font-size: 18px;
+      font-weight: 800 !important;
+      padding-right: 100px;
+     }
+     .datereport
+     {
+      font-size: 16px;
+      color:#797979;
+     }
+    }
+  }
+
+  .packagesCard--container
+  {
+    flex: 0 0 calc(33.33% - 30px) ;
+    position: relative;
+    overflow: hidden;
+    .kkk
+    {
+      padding: 20px;
+      border: 2px #DADADA solid;
+      border-radius: 15px;
+    }
+    img 
+    {
+      width:100%;
+      border-radius: 10px;
+
+    }
+  }
+  .packagescard--content
+  {
+    h2 
+    {
+      font-size: 26px;
+      font-family: var(--font-family-pop);
+      font-weight: 600;
+      color:var(--primary-color);
+      padding-right: 40px;
+      line-height: 28px;
+      margin:20px 0px;
+    }
+    p 
+    {
+      font-size: 18px;
+      font-family: var(--font-family-pop);
+      font-weight: 500;
+      color:#797979;
+      line-height: 28px;
+      margin: 6px 0px 0px 0px;
+      
+    }
+  }
+  .iconsp
+  {
+    display: flex;
+    gap:15px;
+    align-items: center;
+  }
+  .packagescard--buton
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-top:15px;
+    align-items: center;
+    p 
+    {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin:5px;
+      font-family: var(--font-family-pop);
+    }
+  }
   .destinationcard--container
   {
     
@@ -226,4 +326,46 @@
     display: flex;
     justify-content: space-between;
     padding-top: 14px;
+  }
+ 
+  .ourservicescard--container
+  {
+    flex: 0 0  calc(33.33% - 50px);
+   
+    box-shadow: 6px 6px 24px 4px #9ebbeb33;   
+    background-color: #a7bbdb28;
+    border-radius: 15px;
+     .ourservicescard--content
+    {
+    
+      text-align: center;
+      padding:40px 25px 50px 25px;
+      img 
+      {
+        height: 75px;
+       
+      }
+  h1
+  {
+    font-size: 32px;
+    font-weight: 900 !important;
+    font: bolder;
+    font-family: var(--font-family-pop);
+   color:var(--black-color);
+   line-height: 48px;
+   margin:10px 0px;
+   text-align: center;
+  }
+  p 
+  {
+    font-size: 20px;
+    font-weight: 500 !important;
+    font-family: var(--font-family-pop);
+    margin:3px 0px;
+    color:var(--black-color);
+
+
+  }
+
+    }
   }

@@ -5,7 +5,7 @@ import './Pages.scss'
 import Region from '../Components/CheckBoxSidebar/Region'
 import Checkboxs from '../Components/CheckBoxSidebar/Checkbox'
 import { Container } from '@mui/material'
-import CardTable from '../Components/Pagination/Pagination'
+import CardTable from '../Components/Pagination/Destinationpagination'
 
 const Destination = () => {
   return (
