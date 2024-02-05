@@ -15,6 +15,7 @@ const Destination = () => {
     <Container maxWidth='xl'>
     <div className='pages--header'>
         <h1>Destinations</h1>
+        helo
     </div>
     </Container>
   </div>
