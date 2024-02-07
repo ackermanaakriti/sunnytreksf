@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 import Topbar from './Topbar'
 import './Navbar.scss'
+import BookNowBTn from '../Buttons/BookNowBTn'
 
 const Navbar = () => {
   return (
@@ -36,9 +37,10 @@ const Navbar = () => {
                 
                
                 <Grid lg={2} md={2} >
-                    <div className='navbar--button'>
-                    <button>Customize Tour</button>
-                    </div>
+                   
+                  <BookNowBTn value='Book Now'/>
+
+                    
                    
                 </Grid>
             </Grid>

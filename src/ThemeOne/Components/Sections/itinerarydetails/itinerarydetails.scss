@@ -1,0 +1,119 @@
+@import '../../../StyleO.scss';
+.shortdetailtrip--container
+{
+    padding:40px 50px ;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    background-image: url('../../../../Images/footerr.png');
+   
+   
+    overflow: hidden;
+    z-index: 0;
+ 
+    .shortdetailtrip--wrapper
+    {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        z-index: 2;
+        
+        .kjkj{
+            flex: 0 0 33.33%;
+            .shrtdetail{
+                display: flex;
+                gap:21px;
+                font-family: var(--font-family-pop);
+                 
+                span 
+                {
+                  font-size: 44px;
+                  color: var(--primary-color);
+                }
+                .shrtdetail--content{
+                    p 
+                    {
+                        font-size: 18px;
+                        color:var(--sub--header);
+                        font-weight: 500;
+                        margin: 0px;
+    
+                    }
+                    .secnd-p
+                    {
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: var(--primary-color);
+                        margin-top:2px;
+    
+                    }
+    
+                }
+            }
+
+        }
+        
+
+        
+    }
+}
+.itinaarydetail--container
+{
+    padding-top:35px ;
+    h2 
+    {
+        font-size: 30px;
+        font-weight: 800 !important;
+        line-height: 27px;
+        font-family: var( --font-family-libre);
+        color:var(--primary-color);
+        margin:0px;
+        padding-bottom: 12px;
+
+    }
+}
+.iterinary--p
+{
+    font-size: 22px;
+    font-weight: 500;
+    color:var(--sub--header);
+    margin:0px;
+}
+.symbolmap
+{
+ text-align: start;
+    div 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      
+        margin-top: 10px;
+    }
+    img 
+    {
+
+    }
+    p 
+    {
+        font-size: 18px;
+        font-family: var(--font-family-pop);
+        font-weight: 600;
+        color:var(--black-color);
+        text-align: start;
+        margin:0px;
+    }
+}
+.roadmap--container
+{
+    border:2px solid var(--black-color);
+    padding:40px;
+}
+.roadmap--wrapper
+{
+    img 
+    {
+        height: 500px;
+        width: 500px;
+        object-fit: cover;
+    }
+}

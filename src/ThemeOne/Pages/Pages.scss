@@ -26,6 +26,11 @@
     display: flex;
     gap:50px;
     margin-top: 50px;
+    
+}
+.section--wrapper
+{
+    margin-top: 30px;
 }
 .singlepage-acitivities
 {
@@ -169,4 +174,13 @@
              text-align: center;
         }
     }
+}
+.detailiterinary--wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tripdetail--components
+{
+    flex: 0 0 80%;
 }

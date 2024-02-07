@@ -7,20 +7,17 @@ import { trendingPacData } from '../../Data/TrndingPackageData'
 const OurTrendingpack = () => {
   return (
    <>
-   <div className='ourtrendingpac--wrapper'>
+   <div className='section--wrapper'>
     <Container>
         <h1 className='section--header'> Our Trending Packages</h1>
-        <div className='ourtrendingpac--container'>
+        <div className='section--container'>
+            <div className='ourtrendingpackage--card'>
             {trendingPacData.map((item)=>
             (
                 <OurTrendingPackageCard/>
             ))}
         </div>
-        <div className='ourtrendingpac--container'>
-            {trendingPacData.map((item)=>
-            (
-                <OurTrendingPackageCard/>
-            ))}
+        
         </div>
     </Container>
    </div>

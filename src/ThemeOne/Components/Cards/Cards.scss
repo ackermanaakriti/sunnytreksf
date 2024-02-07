@@ -165,12 +165,20 @@
       border: 2px #DADADA solid;
       border-radius: 15px;
     }
-    img 
+    .packagescard-img
     {
-      width:100%;
-      border-radius: 10px;
+    height: 195px;
+      img 
+      {
+        width:100%;
+        border-radius: 10px;
+        height: 100%;
+        object-fit: cover;
+  
+      }
 
     }
+  
   }
   .packagescard--content
   {
@@ -209,11 +217,14 @@
     align-items: center;
     p 
     {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 600;
       color: var(--primary-color);
       margin:5px;
       font-family: var(--font-family-pop);
+      font: 600;
+      line-height: 27px;
+      
     }
   }
   .destinationcard--container

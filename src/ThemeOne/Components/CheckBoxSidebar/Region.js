@@ -26,7 +26,7 @@ const Region = () => {
       <div className="checkbox--container">
 
         <div className="checkbox--header">       <p>
-          Region{" "}
+          Region
           <span>
           <FontAwesomeIcon
             onClick={handleRegion}
@@ -57,7 +57,7 @@ const Region = () => {
             onClick={handleActivities}
             style={{ fontSize: "13px",color:'#0E6097' }}
             icon={faChevronDown}
-          />{" "}
+          />
         </p></div>
 
         {activitiesvisible && (
@@ -75,12 +75,12 @@ const Region = () => {
 
 
         <div className="checkbox--header">       <p>
-          Budget{" "}
+          Budget
           <FontAwesomeIcon
             onClick={handleBudget}
             style={{ fontSize: "13px",color:'#0E6097' }}
             icon={faChevronDown}
-          />{" "}
+          />
         </p></div>
 
         {bugetvisible && (

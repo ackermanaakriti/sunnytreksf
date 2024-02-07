@@ -11,10 +11,10 @@ import { smallacti } from "../../Data/BaseCamp";
 const ExploreActivities = () => {
   return (
     <>
-      <div className="exploreacti--wrapper">
+      <div className="section--wrapper">
         <Container>
           <h1 className="section--header">Explore Activities in Map</h1>
-          <div className="exploreacti--container">
+          <div className="section--container">
             <Grid container>
               <Grid xs={8}>
                 <div className="map">

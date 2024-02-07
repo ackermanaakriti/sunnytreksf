@@ -1,23 +1,23 @@
 .footer--container
 {
-    background-image: url('../../../Images/footer.png');
+    background-image: url('../../../Images/footerr.png');
     margin-top: 70px;
     font-family: var(--font-family-pop);
     background-color: center;
     object-fit: contain;
-    opacity: 0.8 rgb(48, 103, 221);
+    opacity: 1 rgb(48, 103, 221);
     position: relative;
-    background-color: rgb(255 255 255 / 64%);
-    background-blend-mode: soft-light;
+    background-color: rgb(255 255 255 / 50%);
+    background-blend-mode: darken;
 }
-.footer-overlay
-{
-    position: absolute;
-    width: 100%;
-    height:100%;
-    background: rgba(39, 148, 221, 0.356);
-    z-index: 1;
-}
+// .footer-overlay
+// {
+//     position: absolute;
+//     width: 100%;
+//     height:100%;
+//     background: rgba(132, 194, 236, 0.356);
+//     z-index: 1;
+// }
 .footer--wrapper
 {
     padding: 60px 0px;

@@ -9,6 +9,8 @@ import Book from '../Pages/Book'
 import Abouts from '../Pages/Abouts'
 import Packages from '../Pages/Packages'
 import Services from '../Pages/Services'
+import CheckBoxList from '../Pages/Test'
+import DetailIterenary from '../Pages/DetailItirenary'
 
 const Routers = () => {
   return (
@@ -24,6 +26,11 @@ const Routers = () => {
         <Route path='/aboutus' element={<Abouts/>}/>
         <Route path='/packages' element={<Packages/>}/>
         <Route path='/services' element={<Services/>}/>
+        <Route path='/test' element={<CheckBoxList/>}/>
+        \
+        <Route path='/detail' element={<DetailIterenary/>}/>
+
+
 
 
 

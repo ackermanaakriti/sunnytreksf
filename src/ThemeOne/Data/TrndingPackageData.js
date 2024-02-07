@@ -1,4 +1,5 @@
 export const trendingPacData = [
+    
     {
         title:'Annpurna Trekking'
     },
@@ -8,4 +9,5 @@ export const trendingPacData = [
     {
         title:'Kanchanjunga Trekking'
     },
+    
 ]

@@ -5,7 +5,7 @@ import './section.scss'
 const SearchDestinatio = () => {
   return (
     <>
-    <div className='searchdestination--wrapper'>
+    <div className='section--wrapper--wrapper'>
         <Container>
             <div className='searchdestination--container'>
                <Grid container columnGap={4}>
