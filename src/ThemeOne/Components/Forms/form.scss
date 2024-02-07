@@ -72,6 +72,10 @@
     form 
     {
         outline: none;
+        background-color: rgb(255, 255, 255);
+        padding:40px 73px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px 1px rgb(153, 199, 252);
         label
         {
             display: block;
@@ -80,75 +84,54 @@
             line-height: 28px;
             font-family: var(--font-family-pop);
             margin-bottom: 8px;
+            padding-top: 20px;
+           
+            span 
+            {
+                color:red;
+            }
         }
         input 
         {
-            padding:3px 350px 3px 20px;
+          
             font-family: var(--font-family-pop);
             font-size: 16px;
             line-height: 27px;
             font-size: 400 !important;
             border:1px solid var(--black-color);
+          width: 100%;
+            padding:7px 15px;
+            border-radius: 5px;
         }
         select 
         {
-            padding:3px 380px 3px 20px;
+         
             font-family: var(--font-family-pop);
             font-size: 16px;
             line-height: 27px;
             font-size: 400 !important; 
             border:1px solid var(--black-color);
+            width:calc(100% - 24px);
+            padding:8px 15px;
+            border-radius: 5px;
         }
         .date-input
         {
             appearance: none;
         }
-    }
-}
-.f-div 
-{
-    display: flex;
-    justify-content: space-between;
-}
-.secnd-div
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    .second-div-input
-    {
-        padding:3px 153px 3px 20px;
-    }
-}
-.thirddiv
-{
-    margin-top: 40px;
-    label
-    {
-        display: block;
-        font-size: 18px;
-        font-weight: 600 !important;
-        line-height: 28px;
-        font-family: var(--font-family-pop);
-        margin-bottom: 8px;
-    }
-    textarea
-    {
-        font-family: var(--font-family-pop);
-        width: 98%;
+        textarea
+        {
+            width: 100%;
+            font-family: var(--font-family-pop);
+       
         padding:10px 0px 3px 20px;
         border:1px solid var(--black-color);
+        }
     }
 }
-.fourth-div
+.error
 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+    color:red;
+    font-size: 12px;
 }
-.fifth-div
-{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
+

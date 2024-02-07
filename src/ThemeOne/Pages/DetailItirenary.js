@@ -5,6 +5,9 @@ import Checkboxs from '../Components/CheckBoxSidebar/Checkbox'
 import ShortDetailTrip from '../Components/Sections/itinerarydetails/ShortDetailTrip'
 import OverviewItinerary from '../Components/Sections/itinerarydetails/OverviewItinerary'
 import Roadmap from '../Components/Sections/itinerarydetails/Roadmap'
+import Itinerary from '../Components/Sections/itinerarydetails/Itinerary'
+import Essentialinfo from '../Components/Sections/itinerarydetails/Essentialinfo'
+import Itinerarybar from '../Components/Sections/itinerarydetails/Itinerarybar'
 const DetailIterenary = () => {
   return (
   <>
@@ -15,9 +18,12 @@ const DetailIterenary = () => {
     <div className='pages--header'>
         <h1>Mount Everest </h1>
     </div>
+    
     </Container>
+
   </div>
   </div>
+  <Itinerarybar/>
   <Container maxWidth='xl'>
   <div className='checkbox--content--container'>
   
@@ -26,6 +32,8 @@ const DetailIterenary = () => {
     <ShortDetailTrip/>
     <OverviewItinerary/>
     <Roadmap/>
+    <Itinerary/>
+    <Essentialinfo/>
     </div>
   
     

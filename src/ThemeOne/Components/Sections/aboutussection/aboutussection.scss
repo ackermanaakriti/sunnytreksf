@@ -23,11 +23,16 @@
 }
 .aboutus---img
 {
- height: 320px;
+ height: 383px;
+ width: 480;
  padding:40px;
+ 
  img 
  {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
  }
 
 }
@@ -40,13 +45,15 @@
     padding: 40px 10px 0px 10px;
     p 
     {
-        margin:0px 3px;
-        font-size: 15px;
+        margin:20px 3px 0px  3px;
+        font-size: 22px;
         color:#4A4A4A;
+        font-weight: 500;
+        line-height: 27px;
     }
     h1 
     {
-        font-size: 45px;
+        font-size: 55px;
         margin:0px 3px 10px 3px;
         color:var(--primary-color)
 

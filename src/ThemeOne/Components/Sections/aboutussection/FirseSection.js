@@ -43,12 +43,12 @@ const FirseSection = () => {
     <div className='seccnd--div '>
         <Container  maxWidth='xl'>
           <Grid container>
-            <Grid xs={5}>
+            <Grid xs={4}>
                 <div className='aboutus---img'>
                     <img src={img}/>
                 </div>
             </Grid>
-            <Grid xs={7}>
+            <Grid xs={8}>
                 <div className='aboutus--content'>
                     <h1>
                     Welcome to <br></br>

@@ -49,7 +49,7 @@ const ContactUs = () => {
                 <p>Info</p>
                {contactus.map((item)=>
                (
-                <li> <FontAwesomeIcon icon={faEnvelope} /> {item.name}</li>
+                <li> <span><FontAwesomeIcon icon={faEnvelope} /></span> {item.name}</li>
                ))}
             </div>
  <div className='mapcontact'>

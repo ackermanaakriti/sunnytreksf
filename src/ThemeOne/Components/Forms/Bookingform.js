@@ -1,6 +1,6 @@
 import React from "react";
 import "./form.scss";
-import { Container } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -27,9 +27,11 @@ const Bookingform = () => {
             {/* <label>Trip</label>
             <input placeholder='' name='trip' onChange={formik.handleChange} value={formik.values.trip} onBlur={formik.handleBlur}/>
             {formik.touched.trip && formik.errors.trip? <div>{formik.errors.trip}</div>:null} */}
-            <div className="f-div">
-              <div>
-                <label>Trip</label>
+           
+              <Grid container  >
+              <Grid xs={6}>
+
+                <label>Trip <span>*</span></label>
                 <select
                   id="Trip"
                   name="trip"
@@ -44,12 +46,12 @@ const Bookingform = () => {
                   <option value="Mount Everest" label="Mount Everest" />
                 </select>
                 {formik.touched.trip && formik.errors.trip ? (
-                  <div>{formik.errors.trip}</div>
+                  <div className="error">{formik.errors.trip}</div>
                 ) : null}
-              </div>
-              <div>
+              </Grid>
+              <Grid xs={6}>
                 {" "}
-                <label>Date of Travel</label>
+                <label>Date of Travel <span>*</span></label>
                 <input
                   className="date-input"
                   type="number"
@@ -61,13 +63,15 @@ const Bookingform = () => {
                 {formik.touched.dateoftravel && formik.errors.dateoftravel ? (
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
-              </div>
-            </div>
+              </Grid>
+              </Grid>
+            
 
-            <div className="secnd-div">
-              <div>
+         
+              <Grid container>
+              <Grid xs={4}>
                 {" "}
-                <label>No of adults</label>
+                <label>No of adults <span>*</span></label>
                 <input
                   className="second-div-input"
                   type="number"
@@ -79,10 +83,10 @@ const Bookingform = () => {
                 {formik.touched.dateoftravel && formik.errors.dateoftravel ? (
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
-              </div>
-              <div>
+              </Grid>
+              <Grid xs={4}>
                 {" "}
-                <label>No of childrens</label>
+                <label>No of childrens <span>*</span></label>
                 <input
                   className="second-div-input"
                   type="number"
@@ -94,10 +98,10 @@ const Bookingform = () => {
                 {formik.touched.dateoftravel && formik.errors.dateoftravel ? (
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
-              </div>
-              <div>
+              </Grid>
+              <Grid xs={4}>
                 {" "}
-                <label>Trip Duration</label>
+                <label>Trip Duration <span>*</span></label>
                 <input
                   className="second-div-input"
                   type="number"
@@ -109,15 +113,19 @@ const Bookingform = () => {
                 {formik.touched.dateoftravel && formik.errors.dateoftravel ? (
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
-              </div>
-            </div>
-            <div className="thirddiv">
-              <label>More Informaton</label>
+              </Grid>
+              </Grid>
+           
+          
+              <Grid container>
+              <label>More Informaton <span>*</span></label>
               <textarea rows={5} placeholder='Eg. I want to know more about your'></textarea>
-            </div>
-            <div className="fourth-div">
-              <div>
-                <label>Full Name</label>
+        
+            </Grid>
+           
+              <Grid container>
+              <Grid xs={6}>
+                <label>Full Name <span>*</span></label>
                 <input
                   className="fullname"
                   type="text"
@@ -129,10 +137,10 @@ const Bookingform = () => {
                 {formik.touched.trip && formik.errors.trip ? (
                   <div>{formik.errors.trip}</div>
                 ) : null}
-              </div>
-              <div>
+              </Grid>
+              <Grid xs={6}>
                 {" "}
-                <label>Email</label>
+                <label>Email <span>*</span></label>
                 <input
                   className="email"
                   type="email"
@@ -144,11 +152,13 @@ const Bookingform = () => {
                 {formik.touched.dateoftravel && formik.errors.dateoftravel ? (
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
-              </div>
-            </div>
-            <div className="fifth-div">
-              <div>
-                <label>Nationality</label>
+              </Grid>
+        
+            </Grid>
+          
+              <Grid container>
+              <Grid xs={6}>
+                <label>Nationality <span>*</span></label>
                 <select
                   id="natoinality"
                   name="nationality"
@@ -165,10 +175,10 @@ const Bookingform = () => {
                 {formik.touched.trip && formik.errors.trip ? (
                   <div>{formik.errors.trip}</div>
                 ) : null}
-              </div>
-              <div>
+              </Grid>
+              <Grid xs={6}>
                 {" "}
-                <label>Phone Number</label>
+                <label>Phone Number <span>*</span></label>
                 <input
                   className="phonenumber"
                   type="number"
@@ -180,8 +190,9 @@ const Bookingform = () => {
                 {formik.touched.dateoftravel && formik.errors.dateoftravel ? (
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
-              </div>
-            </div>
+              </Grid>
+           
+            </Grid>
           </form>
         </Container>
       </div>

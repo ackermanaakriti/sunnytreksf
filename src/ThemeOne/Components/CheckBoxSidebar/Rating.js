@@ -15,7 +15,7 @@ const Ratingg = () => {
    <>
    <div className='rating--container'>
    <div className="checkbox--header">       <p>
-          Rating{" "}
+          Rating
           <span>
           <FontAwesomeIcon
             onClick={handleRate}
@@ -32,9 +32,27 @@ const Ratingg = () => {
                   <Rating name="size-medium" defaultValue={2} />
                   <p>Clear Filter</p>
                   </div>
+                  
+          <div className='daysrange--container'>
+            
+            <p>Days Range</p>
+            <div className='daysss'>
+
+         
+          <div className='daysrange--input'>
+            <label>Min Days</label>
+            <input type='number'/>
+          </div>
+          <div className='daysrange--input'>
+            <label>Max Days</label>
+            <input type='number'/>
+          </div>
+        </div>
+        </div>
               
           </div>
           )}
+
         
         
     </div></>

@@ -98,6 +98,12 @@
            font-family: var(--font-family-pop);
            font-weight: 500;
            color:white;
+           cursor: pointer;
+           span 
+           {
+            color:var(--hover);
+            padding-right: 5px;
+           }
         }
     
 }
@@ -147,7 +153,7 @@
 }
 .ourdiares--section
 {
-    padding-top:55px;
+    padding-top:110px;
 }
 .ourservices--card--wrapper
 {
@@ -182,5 +188,13 @@
 }
 .tripdetail--components
 {
-    flex: 0 0 80%;
+    flex: 0 0  calc(80% - 70px);
+}
+.ourteam--cont
+{
+    margin-top: 110px;
+}
+.ourteam--car
+{
+    padding-top: 40px;
 }

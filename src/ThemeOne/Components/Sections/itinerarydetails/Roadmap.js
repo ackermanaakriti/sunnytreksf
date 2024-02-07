@@ -4,7 +4,7 @@ import img from '../../../../Images/line.png'
 import peak from '../../../../Images/peak.png'
 import mountain from '../../../../Images/moutain.png'
 import './itinerarydetails.scss'
-import map from '../../../../Images/raodmap.png'
+import map from '../../../../Images/everestmap.png'
 
 const Roadmap = () => {
   return (
@@ -41,8 +41,8 @@ const Roadmap = () => {
             </div>
         </div>
      </Grid>
-     <Grid xs={3}></Grid>
-     <Grid xs={6}>
+     <Grid xs={2}></Grid>
+     <Grid xs={7}>
         <div className='roadmap--wrapper'>
             <img src={map}/>
         </div>

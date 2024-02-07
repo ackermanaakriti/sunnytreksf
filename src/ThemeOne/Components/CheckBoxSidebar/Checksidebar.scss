@@ -54,11 +54,12 @@
 .checkbox--header
 {
     border:1px solid #DADADA;
+    
     width: 100%;
     padding:0px  20px 0px 20px;
     p
     {
-        line-height: 26px;
+        line-height: 22px;
         padding: 14px 20px;
         align-items: center;
         display: flex;
@@ -67,7 +68,7 @@
         font-size: 22px;
         font-family: var(--font-family-inter);
         margin: 0px;
-        font-weight: 700 !important;
+        font-weight: 600 !important;
         
      
     }
@@ -101,4 +102,61 @@
 {
     text-align: center;
     padding:30px 30px 10px 10px;
+}
+.daysrange--input
+{
+    display: flex;
+    flex-direction: column;
+}
+.daysrange--container
+{
+
+   
+    p 
+    {
+        
+        line-height: 22px;
+        padding: 14px 20px;
+        align-items: center;
+      
+       color:var( --black-color);
+        font-size: 22px;
+        font-family: var(--font-family-inter);
+        margin: 0px;
+        font-weight: 600 !important;
+
+    }
+}
+.daysss
+{
+    display: flex;
+    justify-content: space-between;
+   
+    .daysrange--input
+    {
+        input 
+        {
+            border:1px solid gray;
+            padding:5px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+    }
+}
+.butons
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    p 
+    {
+        padding:8px 10px;
+        border-radius: 5px;
+        &:hover{
+            background-color: red;
+            color:white;
+           
+        }
+    }
 }
