@@ -4,6 +4,7 @@ import './Cards.scss'
 import MainButton from '../Buttons/MainButton'
 import Rating from '@mui/material/Rating';
 import Stack from '@mui/material/Stack';
+import CardButton from '../Buttons/CardButton';
 
 
 const DestinationCard = ({props}) => {
@@ -23,7 +24,7 @@ const DestinationCard = ({props}) => {
         <p>(1 review)</p>
           </div>
      
-        <MainButton value='View Details'/>
+        <CardButton value='View Details'/>
         </div>
       
      </div>

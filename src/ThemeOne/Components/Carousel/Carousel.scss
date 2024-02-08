@@ -67,37 +67,79 @@
 
 .tdcard--container {
    
-    width: 300px;
-    height: 200px;
+    width: 344px;
+    
     position: relative;
-    flex: 0 0 auto;
-    margin:10px;
+    
     transition: 1s ease;
   
     img {
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit:contain !important; 
       z-index: 0;
       position: relative;
       border-radius: 10px;
+    }
+    .td--overlay
+    {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.048);
+      top: 0;
+      z-index: 0;
     }
     .tdcard--content {
       height: 100%;
       position: absolute;
       z-index: 3;
       bottom:10px;
-      top:60%;
+      top:70%;
       transform: translateX(50px);
   
       p {
         color: white;
-        font-weight: 600 !important;
+        font-weight: 500 !important;
         font-family: var(--font-family-pop);
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
         font-size: 22px ;
       }
     }
+  }
+  .custom-prev-arrow
+  {
+    position: absolute;
+    top: -47px;
+    right: 74px;
+    span 
+    {
+     
+      padding:0px 5px;
+      border: 2px solid gray;
+      border-radius: 24px;
+      color:gray;
+    }
+  
+
+  }
+  .custom-next-arrow
+  {
+    position: absolute;
+    top: -47px;
+    right: 36px;
+    span 
+    {
+     
+      padding:0px 5px;
+      border: 2px solid gray;
+      border-radius: 24px;
+      color:gray;
+    }
+  }
+  .ourteamcarousel--container
+  {
+    position: relative;
   }
   .ourteam-carousel--card--container
   {

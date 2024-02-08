@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faMountainSun } from "@fortawesome/free-solid-svg-icons";
+import MainButton from "../Buttons/MainButton";
 const OurTrendingPackageCard = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const OurTrendingPackageCard = () => {
             <p>
               
               <FontAwesomeIcon
-                style={{ color: "#0E6097", paddingRight: "5px" }}
+                style={{ color: "#0E6097", paddingRight: "11px" }}
                 icon={faLocationDot}
               />
               Kilimanjaro,Tanzania
@@ -39,10 +40,10 @@ const OurTrendingPackageCard = () => {
             Trekking
           </p>
 
-          {/* <div className="otc--btn">
-            <Bluebutton value="Explore" />
-            <p style={{ color: "gray", fontSize: "20px" }}>Price Rs.2,999</p>
-          </div> */}
+          <div className="otc--btn">
+            <MainButton value='Explore'/>
+            <p >Price Rs.2,999</p>
+          </div>
         </div>
       </div>
     </>

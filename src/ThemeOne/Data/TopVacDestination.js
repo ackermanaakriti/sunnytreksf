@@ -1,6 +1,7 @@
 export const tvdata=[
     {
-     placename:'bhaktapur ,Nepal'
+     placename:'bhaktapur ,Nepal',
+    
     },
     {
         placename:'Pokhara ,Nepal'

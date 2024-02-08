@@ -1,77 +1,218 @@
-import React, { useRef, useState,useEffect } from 'react';
-import './Carousel.scss';
-import img from '../../../Images/Rectangle 115.png';
-import { tvdata } from '../../Data/TopVacDestination';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+// import React, { useRef, useState,useEffect } from 'react';
+// import './Carousel.scss';
+// import img from '../../../Images/Rectangle 115.png';
+// import Slider from "react-slick";
 
-const TopVacDestiCarousel = () => {
-  const cardRef = useRef(null);
-  const [cardWidth, setCardWidth] = useState(0);
+// import img2 from '../../../Images/sarangkot.png';
 
-  const handleResize = () => {
-    if (cardRef.current) {
-      setCardWidth(cardRef.current.firstElementChild.clientWidth);
-    }
-  };
+// import { tvdata } from '../../Data/TopVacDestination';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+// import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-  const scrollLeft = () => {
-    cardRef.current.scrollLeft -= cardWidth;
-  };
+// const TopVacDestiCarousel = () => {
+//   var settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1
+//   };
 
-  const scrollRight = () => {
-    cardRef.current.scrollLeft += cardWidth;
-  };
-
-  
-  useEffect(() => {
-    handleResize(); 
-
-   
-    window.addEventListener('resize', handleResize);
-
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <div >
+//   return (
+//     <div >
+//        {/* <div className='btn--container'>
+//       <button className="button-prev" onClick={scrollLeft}>
+//       <FontAwesomeIcon style={{color:'#0E6097'}} icon={faArrowLeft} />
+//       </button>
+//       <button className="button-next" onClick={scrollRight}>
+//       <FontAwesomeIcon style={{color:'#0E6097'}} icon={faArrowRight} />
+//       </button>
+//       </div> */}
+//        <Slider {...settings}>
+//       <div>
+//       <div  className="tdcard--container" >
+//           <div  className="tdcard--item">
+//             <img src={img} />
+//             <div className="tdcard--content">
+//               <p>Pokhara,Nepal</p>
+//             </div>
+//           </div>
+//           </div>
+//       </div>
+//       <div>
+//       <div  className="tdcard--container" >
+//           <div  className="tdcard--item">
+//             <img src={img} />
+//             <div className="tdcard--content">
+//               <p>Pokhara,Nepal</p>
+//             </div>
+//           </div>
+//           </div>
+//       </div>
+//       <div>
+//       <div  className="tdcard--container" >
+//           <div  className="tdcard--item">
+//             <img src={img} />
+//             <div className="tdcard--content">
+//               <p>Pokhara,Nepal</p>
+//             </div>
+//           </div>
+//           </div>
+//       </div>
+//       <div>
+//       <div  className="tdcard--container" >
+//           <div  className="tdcard--item">
+//             <img src={img} />
+//             <div className="tdcard--content">
+//               <p>Pokhara,Nepal</p>
+//             </div>
+//           </div>
+//           </div>
+//       </div>
+//       <div>
+//       <div  className="tdcard--container" >
+//           <div  className="tdcard--item">
+//             <img src={img} />
+//             <div className="tdcard--content">
+//               <p>Pokhara,Nepal</p>
+//             </div>
+//           </div>
+//           </div>
+//       </div>
+//       <div>
+//       <div  className="tdcard--container" >
+//           <div  className="tdcard--item">
+//             <img src={img} />
+//             <div className="tdcard--content">
+//               <p>Pokhara,Nepal</p>
+//             </div>
+//           </div>
+//           </div>
+//       </div>
+//     </Slider>
      
     
 
-       <div className='carousel--wrappper-tvd'  >
-       <div className='btn--container'>
-      <button className="button-prev" onClick={scrollLeft}>
-      <FontAwesomeIcon style={{color:'#0E6097'}} icon={faArrowLeft} />
-      </button>
-      <button className="button-next" onClick={scrollRight}>
-      <FontAwesomeIcon style={{color:'#0E6097'}} icon={faArrowRight} />
-      </button>
-      </div>
-      <div ref={cardRef} className="carousel--card--container">
-        {tvdata.map((item, index) => (
-            <div  className="tdcard--container" >
-          <div key={index} className="tdcard--item">
-            <img src={img} alt={`card-img-${index}`} />
-            <div className="tdcard--content">
-              <p>{item.placename}</p>
-            </div>
-          </div>
-          </div>
-      
-        ))}
-        </div>
-          
-          </div>
        
       
 
      
-    </div>
-  );
+//     </div>
+//   );
+// };
+
+// export default TopVacDestiCarousel;
+
+
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import img from '../../../Images/Rectangle 115.png';
+import img2 from '../../../Images/sarangkot.png';
+import img3 from '../../../Images/Rectangle 118.png'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight ,faArrowLeft} from "@fortawesome/free-solid-svg-icons";
+
+
+import './Carousel.scss'
+
+
+const CustomPrevArrow = (props) => {
+  const { onClick } = props;
+  return <div className="custom-prev-arrow" onClick={onClick}><span><FontAwesomeIcon icon={faArrowLeft} /></span></div>;
 };
 
-export default TopVacDestiCarousel;
+// Custom next arrow component
+const CustomNextArrow = (props) => {
+  const { onClick } = props;
+  return <div className="custom-next-arrow" onClick={onClick}><span><FontAwesomeIcon icon={faArrowRight} /></span></div>;
+};
+export default function TopVacDestiCarousel() {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+  };
+  return (
+    <Slider {...settings}>
+     
+     <div>
+      <div  className="tdcard--container" >
+         <div  className="tdcard--item">       
+               <img src={img} />
+               <div className="td--overlay">
+         <div className="tdcard--content">
+         <p>Sarangkot Pokhara</p>
+         </div>
+         </div>
+           </div>
+      </div>
+      </div>
+      <div>
+      <div  className="tdcard--container" >
+         <div  className="tdcard--item">       
+               <img src={img3} />
+               <div className="td--overlay">
+         <div className="tdcard--content">
+         <p>Sarangkot Pokhara</p>
+         </div>
+         </div>
+           </div>
+      </div>
+      </div>
+      <div>
+      <div  className="tdcard--container" >
+         <div  className="tdcard--item">       
+               <img src={img2} />
+               <div className="td--overlay">
+         <div className="tdcard--content">
+         <p>Sarangkot Pokhara</p>
+         </div>
+         </div>
+           </div>
+      </div>
+      </div>
+      <div>
+      <div  className="tdcard--container" >
+         <div  className="tdcard--item">       
+               <img src={img2} />
+               <div className="td--overlay">
+         <div className="tdcard--content">
+         <p>Sarangkot Pokhara</p>
+         </div>
+         </div>
+           </div>
+      </div>
+      </div>
+     
+      <div>
+      <div  className="tdcard--container" >
+         <div  className="tdcard--item">         
+             <img src={img} />
+         <div className="tdcard--content">
+         <p>Pokhara,Nepal</p>
+         </div>
+           </div>
+      </div>
+      </div>
+      <div>
+      <div  className="tdcard--container" >
+         <div  className="tdcard--item">        
+              <img src={img} />
+         <div className="tdcard--content">
+         <p>Pokhara,Nepal</p>
+         </div>
+           </div>
+      </div>
+      </div>
+      
+    </Slider>
+  );
+}

@@ -14,48 +14,31 @@ const Ratingg = () => {
   return (
    <>
    <div className='rating--container'>
-   <div className="checkbox--header">       <p>
-          Rating
-          <span>
-          <FontAwesomeIcon
-            onClick={handleRate}
-            style={{ fontSize: "13px",color:'#0E6097' }}
-            icon={faChevronDown}
-          />
-          </span>
-          </p></div>
+    <div className='rating--header'>
+      <p className='pheader--rating'>Rating</p>
+      <span>
+      <Rating name="size-medium" defaultValue={2} />
+      </span>
+   
+      <p>Clear Filter</p>
 
-          {ratingvisible&& (
-            <div className='ratinggg--container'>
-                <div className='rating--icon--container'>
+    </div>
+   </div>
 
-                  <Rating name="size-medium" defaultValue={2} />
-                  <p>Clear Filter</p>
-                  </div>
-                  
-          <div className='daysrange--container'>
-            
-            <p>Days Range</p>
-            <div className='daysss'>
-
-         
-          <div className='daysrange--input'>
-            <label>Min Days</label>
-            <input type='number'/>
-          </div>
-          <div className='daysrange--input'>
-            <label>Max Days</label>
-            <input type='number'/>
-          </div>
-        </div>
-        </div>
-              
-          </div>
-          )}
-
-        
-        
-    </div></>
+   <div className='Daysrange--container'>
+    <p className='pheader--rating'>Days Range</p>
+    <form className='dayrange--form'>
+      <div>
+        <label>Min Days</label>
+        <input></input>
+      </div>
+      <div>
+        <label>Min Days</label>
+        <input></input>
+      </div>
+    </form>
+   </div>
+  </>
   )
 }
 

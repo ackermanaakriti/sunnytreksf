@@ -4,13 +4,14 @@ import './section.scss'
 import MajesticPeaksCard from '../Cards/MajesticPeaksCard'
 import { category } from '../../Data/Categories'
 import img from '../../../Images/Rectangle 130.png'
+import MainButton from '../Buttons/MainButton'
 
 const MajesticPeaks = () => {
   return (
    <>
    <div className='majesticpeaks--wrapper'>
-    <Container>
-        <div className='section--header--container'>        <h1 className='section--header'>Majestic Peaks,Safaris & More Categories</h1>
+    <Container maxWidth='xl'>
+        <div className='majestic--header--container'>        <h1 className='section--header'>Majestic Peaks, <br></br>Safaris & More <br></br> Categories</h1>
 </div>
         <div className='majesticpeaks--container'>
   
@@ -21,14 +22,19 @@ const MajesticPeaks = () => {
                     <div className="majesticpeaks--card--img">
                       <img src={img} alt="" />
                       <div className='majestic--overlay'> </div>
+                      <p className='majestic--title' >{item.categoryname}</p>
                     </div>
-                    <p className='majestic--title' >{item.categoryname}</p>
+                  
                     <div className="majesticpeaks--card--content">
                       <p> {item.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
+              <div className='majestic--btnn'>
+            <MainButton value='Explore More'/>
+            </div>
+           
               
      
          

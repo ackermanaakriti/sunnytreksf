@@ -104,9 +104,20 @@
        
     }
 }
+.subsection--header
+{
+  font-size: 48px;
+  color:var(--primary-color);
+  text-align: center;
+}
 .singleplacereview--container
 {
   padding-top:60px;
+}
+.setdiv
+{
+  padding:10px 20em;
+  text-align: center;
 }
 .featuredDes--container{
   width: 100%;

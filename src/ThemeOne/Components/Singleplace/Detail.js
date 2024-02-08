@@ -21,7 +21,7 @@ const Detail = () => {
 
     
         <div className="singlepage-acitivities">
-          <h1 className="section--header">Activities in Pokhara</h1>
+          <h1 className="subsection--header">Activities in Pokhara</h1>
           <div className="signlepage-acitvities--cards">
          
               <div className="ccc">
@@ -35,7 +35,10 @@ const Detail = () => {
        
         <div className="singlepage-otherdestination">
            
-          <h1 className="section--header">Other Destination May You Like</h1>
+           <div className="setdiv">
+           <h1 className="subsection--header">Other Destination May You Like</h1>
+           </div>
+       
           <div className="signlepage-otherdestinaitons--cards">
            
               <div className="ddd">

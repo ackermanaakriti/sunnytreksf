@@ -1,37 +1,74 @@
 import { Container ,Grid} from '@mui/material'
 import React from 'react'
 import './section.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudflare } from '@fortawesome/free-brands-svg-icons';
 
 const SearchDestinatio = () => {
   return (
     <>
-    <div className='section--wrapper--wrapper'>
-        <Container>
+    <div className='search--places--wrapper'>
+        <Container maxWidth='xl'>
             <div className='searchdestination--container'>
-               <Grid container columnGap={4}>
+               <Grid container columnGap={5} justifyContent='space-between'>
                 <Grid>
                     <div className='destinations--input'>
-                        <input placeholder='Destination'/>
+                    <span>
+                        <FontAwesomeIcon icon={faCloudflare} /> 
+                        </span>
+                       <select>
+                        <option>Destination</option>
+                        <option>Pokhara</option>
+                        <option>Lumbini</option>
+                        <option>Chitawan</option>
+                       </select>
                     </div>
                 </Grid>
                 <Grid>
                     <div className='destinations--input'>
-                        <input placeholder='Destination'/>
+                    <span>
+                        <FontAwesomeIcon icon={faCloudflare} /> 
+                        </span>
+                    <select>
+                        <option> Activities</option>
+                        <option>Pokhara</option>
+                        <option>Lumbini</option>
+                        <option>Chitawan</option>
+                       </select>
                     </div>
                 </Grid>
                 <Grid>
                     <div className='destinations--input'>
-                        <input placeholder='Destination'/>
+                    <span>
+                        <FontAwesomeIcon icon={faCloudflare} /> 
+                        </span>
+                        
+                   
+                    <select>
+                  
+                        <option>Seasons</option>
+                        <option>Pokhara</option>
+                        <option>Lumbini</option>
+                        <option>Chitawan</option>
+                       </select>
                     </div>
                 </Grid>
                 <Grid>
                     <div className='destinations--input'>
-                        <input placeholder='Destination'/>
+                    <span>
+                        <FontAwesomeIcon icon={faCloudflare} /> 
+                        </span>
+                    <select>
+                        <option>Duration</option>
+                        <option>Pokhara</option>
+                        <option>Lumbini</option>
+                        <option>Chitawan</option>
+                       </select>
                     </div>
                 </Grid>
                 <Grid>
-                    <div className='destinations--input'>
-                        <input placeholder='Destination'/>
+                    <div className='destinations--input--button'>
+                       <button>Search Result</button>
                     </div>
                 </Grid>
                </Grid>

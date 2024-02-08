@@ -12,15 +12,20 @@ const Heropagesection = () => {
     <>
     <div className='heropagesection--wrapper'>
       <div className='heropage--overlay'></div>
-        <Container>
+        <Container maxWidth='xl'>
             <div className='heropage--content'>
                 <h1>Your Friend For <span>Travelling</span></h1>
                 <p>Welcome to our cozy cabin nestled in the heart of the mountains!
 Our cabin is the perfect getaway for
 those seeking peace and relaxation in a natural environment.</p>
             </div>
+          
         </Container>
+        
+  
+      
     </div>
+    <SearchDestinatio/>
   
     </>
   )

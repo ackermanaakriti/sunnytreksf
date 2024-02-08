@@ -5,7 +5,7 @@ const SinglePlaceReview = () => {
   return (
     <>
     <div className='singleplacereview--container'>
-        <h1 className='section--header'>Pokhara Tour Reviews</h1>
+        <h1 className='subsection--header'>Pokhara Tour Reviews</h1>
 
     </div>
     <div className=''>

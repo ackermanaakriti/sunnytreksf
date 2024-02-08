@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
 .pages--header
 {
     position: absolute;
@@ -147,8 +148,7 @@
 .checkbox--content--container
 {
     padding-top: 50px;
-    display: flex;
-    column-gap: 70px;
+    
 
 }
 .ourdiares--section
@@ -188,7 +188,7 @@
 }
 .tripdetail--components
 {
-    flex: 0 0  calc(80% - 70px);
+    
 }
 .ourteam--cont
 {
