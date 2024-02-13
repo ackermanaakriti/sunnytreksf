@@ -3,7 +3,6 @@ import React from 'react'
 import './section.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudflare } from '@fortawesome/free-brands-svg-icons';
-import '../../responsive.scss'
 
 
 const SearchDestinatio = () => {

@@ -28,8 +28,8 @@ const Bookingform = () => {
             <input placeholder='' name='trip' onChange={formik.handleChange} value={formik.values.trip} onBlur={formik.handleBlur}/>
             {formik.touched.trip && formik.errors.trip? <div>{formik.errors.trip}</div>:null} */}
            
-              <Grid container  >
-              <Grid xs={6}>
+              <Grid container  style={{gap: "20px"}} >
+              <Grid xs={6} className="customItem6">
 
                 <label>Trip <span>*</span></label>
                 <select
@@ -49,7 +49,7 @@ const Bookingform = () => {
                   <div className="error">{formik.errors.trip}</div>
                 ) : null}
               </Grid>
-              <Grid xs={6}>
+              <Grid xs={6}  className="customItem6">
                 {" "}
                 <label>Date of Travel <span>*</span></label>
                 <input
@@ -68,8 +68,8 @@ const Bookingform = () => {
             
 
          
-              <Grid container>
-              <Grid xs={4}>
+              <Grid container style={{gap: "20px"}}>
+              <Grid item xs={4} className="customItem">
                 {" "}
                 <label>No of adults <span>*</span></label>
                 <input
@@ -84,7 +84,7 @@ const Bookingform = () => {
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
               </Grid>
-              <Grid xs={4}>
+              <Grid  item xs={4}  className="customItem">
                 {" "}
                 <label>No of childrens <span>*</span></label>
                 <input
@@ -99,7 +99,7 @@ const Bookingform = () => {
                   <div> {formik.errors.dateoftravel}</div>
                 ) : null}
               </Grid>
-              <Grid xs={4}>
+              <Grid  item xs={4}  className="customItem">
                 {" "}
                 <label>Trip Duration <span>*</span></label>
                 <input
@@ -123,8 +123,8 @@ const Bookingform = () => {
         
             </Grid>
            
-              <Grid container>
-              <Grid xs={6}>
+              <Grid container  style={{gap: "20px"}}>
+              <Grid xs={6}  className="customItem6">
                 <label>Full Name <span>*</span></label>
                 <input
                   className="fullname"
@@ -138,7 +138,7 @@ const Bookingform = () => {
                   <div>{formik.errors.trip}</div>
                 ) : null}
               </Grid>
-              <Grid xs={6}>
+              <Grid xs={6}  className="customItem6">
                 {" "}
                 <label>Email <span>*</span></label>
                 <input
@@ -156,8 +156,8 @@ const Bookingform = () => {
         
             </Grid>
           
-              <Grid container>
-              <Grid xs={6}>
+              <Grid container  style={{gap: "20px"}}>
+              <Grid xs={6}  className="customItem6">
                 <label>Nationality <span>*</span></label>
                 <select
                   id="natoinality"
@@ -176,7 +176,7 @@ const Bookingform = () => {
                   <div>{formik.errors.trip}</div>
                 ) : null}
               </Grid>
-              <Grid xs={6}>
+              <Grid xs={6}  className="customItem6">
                 {" "}
                 <label>Phone Number <span>*</span></label>
                 <input

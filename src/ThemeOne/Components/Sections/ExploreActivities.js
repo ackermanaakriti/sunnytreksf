@@ -24,7 +24,7 @@ const ExploreActivities = () => {
                 </div>
               </Grid>
 
-              <Grid  lg={5} xl={4}>
+              <Grid  lg={5} xl={4} xs={6}>
                 <div className="exploreacti--content">
                   <button>Base Camp trek</button>
                   <ul>

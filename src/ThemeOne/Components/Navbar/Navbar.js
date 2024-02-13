@@ -4,7 +4,6 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { navlinks } from '../../Const/Navlinks'
 import { Link } from 'react-router-dom'
-import '../../responsive.scss'
 
 import Topbar from './Topbar'
 import './Navbar.scss'
@@ -17,11 +16,11 @@ const Navbar = () => {
    <Topbar/>
    <div className='navbar--wrapper'>
     <Container   className='container'>
-            <Grid container>
+            <Grid container style={{ alignItems: 'center' }}>
                 <Grid lg={2} >
                     <Link to='/'>Logo</Link>
                 </Grid>
-                <Grid lg={8} md={9  } xs={12}>
+                <Grid lg={8} md={9} xs={12}>
                     <div className='navlinks--wrapper'>
                     <ul>
                         {navlinks.map((item)=>
