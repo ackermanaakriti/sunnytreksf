@@ -2,7 +2,7 @@
 {
   background-image: url('../../Images//Destination.png');
   position: relative;
-  height: 60vh;
+  height: 450px;
   position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -12,7 +12,9 @@
 {
     position: absolute;
     bottom: 0%;
-    left: 40%;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, 10px);
     h1 
     {
         color:white;
@@ -148,6 +150,10 @@
 .checkbox--content--container
 {
     padding-top: 50px;
+    display: flex;
+    gap:40px;
+    // display: grid; /* Use CSS grid layout */
+    // grid-template-columns: auto 1fr; 
     
 
 }
@@ -188,7 +194,7 @@
 }
 .tripdetail--components
 {
-    
+    flex: 1;
 }
 .ourteam--cont
 {

@@ -9,8 +9,9 @@ const MajesticPeaksCard = () => {
    <div className='majestipeakscard--container'>
     <img src={img} alt='category'/>
     <div className='majesticpeak--overlay'></div>
-    
-    <p className='titlemajesticpeaks'>Jungle Safari</p>
+      <div div className='titlemajesticpeaks'> <p >Jungle Safari</p></div>
+
+   
     </div>
     <div className='majestic--description'>
         <p>Browse our example trips and get in contact

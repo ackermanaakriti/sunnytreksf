@@ -134,11 +134,31 @@ export default function TopVacDestiCarousel() {
   var settings = {
     dots: false,
     infinite: true,
+    
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1040,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
   return (
     <Slider {...settings}>

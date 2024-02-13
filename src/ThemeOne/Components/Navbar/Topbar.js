@@ -22,7 +22,7 @@ const Topbar = () => {
         
            
           <div className="topbar--container">
-            <Container maxWidth='xl' >
+            <Container  >
           
             <Grid container>
                 <Grid lg={3}  md={5} sm={6} >

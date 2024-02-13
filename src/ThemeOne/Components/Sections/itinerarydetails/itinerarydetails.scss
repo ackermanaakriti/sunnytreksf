@@ -135,9 +135,10 @@ margin-top: 10px;
         border:1px solid #797979;
         position: static;
         margin-right: 13px;
+        height: max-content !important;
         img 
         {
-
+              height: max-content !important;
         }
 
     }
@@ -185,6 +186,7 @@ margin-top: 10px;
         display: flex;
         align-items: center;
         gap:27px;
+        padding: 14px;
         border-bottom: 1px solid gray;
         &:last-child
         {
@@ -208,6 +210,7 @@ margin-top: 10px;
   .itineraybar--b
   {
       background-color: var(--primary-color);
+      padding: 14px;
   }
   .itinerarybar--icons
   {

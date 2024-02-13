@@ -1,12 +1,12 @@
 
-.singepage--cards
+.destinationpagination--cards
 {
-  flex: 0 0 80%;
+ flex: 0 0 calc(80% - 20px);
 
 }
 .activites-flex
 {
-  flex: 0 0 80%;
+  flex: 1;
 }
 .pagination--container
 {

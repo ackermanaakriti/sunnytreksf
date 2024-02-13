@@ -1,6 +1,10 @@
 
 @import '../../StyleO.scss';
 
+.checkbox--container--main
+{
+  flex: 0 0 calc(380px - 20px);
+}
 .region--container
 {
     border-top:none;

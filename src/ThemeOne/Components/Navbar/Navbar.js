@@ -4,6 +4,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { navlinks } from '../../Const/Navlinks'
 import { Link } from 'react-router-dom'
+import '../../responsive.scss'
 
 import Topbar from './Topbar'
 import './Navbar.scss'
@@ -15,7 +16,7 @@ const Navbar = () => {
    <div className='navbar--main--wrapper'>
    <Topbar/>
    <div className='navbar--wrapper'>
-    <Container maxWidth='xl'>
+    <Container   className='container'>
             <Grid container>
                 <Grid lg={2} >
                     <Link to='/'>Logo</Link>

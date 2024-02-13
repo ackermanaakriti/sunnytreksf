@@ -9,7 +9,7 @@ const TopVacDestination = () => {
   return (
     <>
     <div className='topvacdestination--wrapper'>
-        <Container maxWidth='xl'>
+        <Container >
           <h1 className='section--header'>Top Vacation Destinations</h1>
             <div className='topvacdestination--container'>
             <TopVacDestiCarousel/>

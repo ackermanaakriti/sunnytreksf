@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { tvdata } from "../../Data/TopVacDestination";
 import DestinationCard from "../Cards/DestinationCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,8 +7,24 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 import "./pagination.scss";
 import ActivitiesCard from "../Cards/ActivitiesCard";
+import axios from "axios";
+  const apiurl = process.env.REACT_APP_API_BASE_URL;
+
 
 const ActivitiesPagination = () => {
+ const [Activities,setActivites] = useState()
+
+
+//   useEffect(()=>
+//   {
+//     axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/v1/activity`)
+//      .then((res)=>{
+//       console.log(res)
+     
+//   })
+// })
+
+
   const cardsPerPage = 9; // Number of cards per page
   const [currentPage, setCurrentPage] = useState(1);
   const totalCards = tvdata.length;

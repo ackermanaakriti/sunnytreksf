@@ -6,7 +6,7 @@ import MainButton from '../Buttons/MainButton'
 const Checkboxs = () => {
   return (
   <>
-  <div className='checkbox--container'>
+  <div className='checkbox--container--main'>
     <Region/>
     <Rating/>
     <div className='butons'>

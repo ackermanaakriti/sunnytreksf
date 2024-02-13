@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../../Images/activities1.png'
+import img from '../../../Images/pokhara.png'
 import './Cards.scss'
 import './cardresponsive.scss'
 

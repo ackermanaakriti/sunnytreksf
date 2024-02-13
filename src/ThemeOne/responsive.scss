@@ -1,0 +1,53 @@
+@import './StyleO.scss';
+
+
+@media (max-width:1980px)
+{
+
+    .css-1oqqzyl-MuiContainer-root
+    {
+        max-width: 1650px !important;
+    }
+
+    .navbar--main--wrapper
+    {
+        // max-width: 1280px;
+        // Container {
+        //     max-width: 1280px;
+        // }
+    }
+
+}
+@media (max-width:1280px)
+{
+    
+    .css-1oqqzyl-MuiContainer-root
+    {
+        max-width: 1230px !important;
+    }
+    .css-1xzqqmo-MuiGrid-root
+    {
+        gap:10px !important;
+    }
+    .homepage{
+        .searchdestination--container
+        {
+    padding: 42px 36px;
+        }
+        .destinations--input 
+        {
+            padding: 10px 20px;
+            select 
+            {
+                font-size: 14px;
+    
+            }
+            span 
+            {
+                font-size: 20px;
+            }
+        } 
+    }
+    
+}
+ 

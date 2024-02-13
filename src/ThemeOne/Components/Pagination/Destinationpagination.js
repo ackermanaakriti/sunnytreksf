@@ -23,7 +23,7 @@ const CardTable = () => {
 
   return (
     <>
-    <div className="singepage--cards">
+    <div className="destinationpagination--cards">
       <div className="pagination--container">
         {currentCards.map((item) => (
           <DestinationCard

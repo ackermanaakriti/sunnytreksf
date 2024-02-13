@@ -26,11 +26,10 @@ const DetailIterenary = () => {
   <Itinerarybar/>
   <Container maxWidth='xl'>
   <div className='checkbox--content--container'>
-    <Grid container>
-      <Grid xs={3}>
+   
       <Checkboxs/>
-      </Grid>
-    <Grid xs={9}>
+      
+
     <div className='tripdetail--components'>
     <ShortDetailTrip/>
     <OverviewItinerary/>
@@ -38,9 +37,7 @@ const DetailIterenary = () => {
     <Itinerary/>
     <Essentialinfo/>
     </div>
-    </Grid>
    
-    </Grid>
   
    
   

@@ -3,14 +3,16 @@ import React from 'react'
 import './section.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudflare } from '@fortawesome/free-brands-svg-icons';
+import '../../responsive.scss'
+
 
 const SearchDestinatio = () => {
   return (
     <>
     <div className='search--places--wrapper'>
-        <Container maxWidth='xl'>
+        <Container >
             <div className='searchdestination--container'>
-               <Grid container columnGap={5} justifyContent='space-between'>
+               <Grid container justifyContent={'space-between'}>
                 <Grid>
                     <div className='destinations--input'>
                     <span>

@@ -22,7 +22,8 @@ const MajesticPeaks = () => {
                     <div className="majesticpeaks--card--img">
                       <img src={img} alt="" />
                       <div className='majestic--overlay'> </div>
-                      <p className='majestic--title' >{item.categoryname}</p>
+                      <div className='majestic--title'>  <p  >{item.categoryname}</p></div>
+                     
                     </div>
                   
                     <div className="majesticpeaks--card--content">
