@@ -10,7 +10,7 @@ const MajesticPeaks = () => {
   return (
    <>
    <div className='majesticpeaks--wrapper'>
-    <Container maxWidth='xl'>
+    <Container >
         <div className='majestic--header--container'>        <h1 className='section--header'>Majestic Peaks, <br></br>Safaris & More <br></br> Categories</h1>
 </div>
         <div className='majesticpeaks--container'>
