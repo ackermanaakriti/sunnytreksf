@@ -18,13 +18,13 @@ const ExploreActivities = () => {
           <h1 className="section--header">Explore Activities in Map</h1>
           <div className="section--container">
             <Grid container>
-              <Grid xl={7} lg={7} xs={6}>
+              <Grid xl={7} lg={6} xs={6}>
                 <div className="map">
                   <img src={img} alt="nepal map" />
                 </div>
               </Grid>
 
-              <Grid lg={5} xl={4}>
+              <Grid  lg={5} xl={4}>
                 <div className="exploreacti--content">
                   <button>Base Camp trek</button>
                   <ul>
